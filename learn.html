@@ -51,51 +51,170 @@
       </div>
   </div>
 
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Collapsible Group Item #1
-          </button>
-        </h5>
+  <div class="cards-container">
+
+      <!-- CARD COMPONENTS -->
+      <div class="card" data-tab="javascript">
+        <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/sir.jpg" />
+          </div>
+          <span>By SIR RUFF'N'STUFF</span>
+        </div>
       </div>
 
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <div class="card" data-tab="javascript">
+        <div class="headline">Type Coercion: Why Does NaN !== NaN? and Other Strange Occurrences</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/bones.jpg" />
+          </div>
+          <span>By BONES R. LIFE</span>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Collapsible Group Item #2
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+      <div class="card" data-tab="bootstrap">
+        <div class="headline">Bootstrap 5: Get a Sneak Peak at all the New Features</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/fido.jpg" />
+          </div>
+          <span>By FIDO WALKSALOT</span>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Collapsible Group Item #3
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+      <div class="card" data-tab="technology">
+        <div class="headline">AI: What Are the Ethical Ramifications of the Future?</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/max.jpg" />
+          </div>
+          <span>By MAX GOODBOYE</span>
         </div>
       </div>
+
+      <div class="card" data-tab="jquery">
+        <div class="headline">History of Javascript Libraries: from jQuery to React</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/puppers.jpg" />
+          </div>
+          <span>By PUPPER S. DOGGO</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="bootstrap">
+        <div class="headline">UI Frameworks: A Comparison, Which Made Our List? (Hint: Bootstrap is on it)</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/max.jpg" />
+          </div>
+          <span>By MAX GOODBOYE</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="node">
+        <div class="headline">Node.js in 2018: Which Framework? Express, Sails, Hapi?</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/sir.jpg" />
+          </div>
+          <span>By SIR RUFF'N'STUFF</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="node">
+        <div class="headline">MongoDB: NoSQL vs. SQL, the Debate Continues...</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/bones.jpg" />
+          </div>
+          <span>By BONES R. LIFE</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="jquery">
+        <div class="headline">jQuery Animations: When and Where to Use Them, and Not CSS</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/fido.jpg" />
+          </div>
+          <span>By FIDO WALKSALOT</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="technology">
+        <div class="headline">AR or VR: How We Will See the World Through a Digital Lense</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/max.jpg" />
+          </div>
+          <span>By MAX GOODBOYE</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="javascript">
+        <div class="headline">When to Rest, When to Spread: Why There Are Two Meanings Behind '...'</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/puppers.jpg" />
+          </div>
+          <span>By PUPPER S. DOGGO</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="javascript">
+        <div class="headline">Typescript: Ten Things you Should Know Before Building Your Next Angular Application</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/sir.jpg" />
+          </div>
+          <span>By SIR RUFF'N'STUFF</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="technology">
+        <div class="headline">Quantum Computing: Where we Are Now, and Where We Will Be Very Soon</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/max.jpg" />
+          </div>
+          <span>By MAX GOODBOYE</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="jquery">
+        <div class="headline">Why I Use jQuery in Every Application I Create and Why You Should Too</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/fido.jpg" />
+          </div>
+          <span>By FIDO WALKSALOT</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="bootstrap">
+        <div class="headline">The Hottest New Bootstrap 4 Components Every Developer Needs to Know About</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/max.jpg" />
+          </div>
+          <span>By MAX GOODBOYE</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="javascript">
+        <div class="headline">JavaScript Article</div>
+        <div class="author">
+          <div class="img-container">
+            <img src="./assets/bones.jpg" />
+          </div>
+          <span>By BONES R. LIFE</span>
+        </div>
+      </div>
+
     </div>
-  </div>
 
 </body>
 
