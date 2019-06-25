@@ -166,20 +166,25 @@ header nav a {
 .top .header-image img {
   width: 100%;
 }
-.top .header-button h2 {
+.top .text-panel {
+  position: absolute;
+  top: 100px;
+  left: 60%;
+  background-color: white;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top .text-panel h2 {
   top: 10px;
   font-size: 3rem;
   color: #05FFB8;
-  position: absolute;
-  top: 250px;
-  left: 60vw;
+  text-align: center;
 }
-.top .header-button button {
+.top .text-panel button {
   font-size: 1.6rem;
   color: #2D2D2D;
-  position: absolute;
-  top: 330px;
-  left: 60vw;
 }
 .bottom {
   display: flex;
