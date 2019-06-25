@@ -9,6 +9,9 @@
         max-width: 98%;
         max-height: 20%;
         margin: 1%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+
       }
     }
   
@@ -18,17 +21,18 @@
       width: 100px;
       margin: 20px;
   
-      h4 {
+      h2 {
         top: 30px;
-        font-size: 40px;
+        font-size: 6vh;
         color: white;
         position: absolute;
         top: 37%;
         left: 55%;
         background-color:@blue;
-        padding: 7px;
-    
-        border: 5px solid white;
+        padding: 12px;
+        border-radius: 7px;
+        border: 0px;
+        
         
       }
   
@@ -36,32 +40,39 @@
     }
   }
   
-  .aboutmission {
-      display: flex;
-    width: 880px;
-    margin: 0 auto;
+  .bottom-about {
+    display: flex;
+    align-content: top;
+    justify-content: space-evenly;
+    width: 100%;
+    
+
   
-      .aboutfeature {
-          width: 50%;
-          padding-bottom: 50px;
-          
+    .feature {
+      width: 50%;
+      padding:20px;
+      border-radius:5px;
+      border: 2px solid @green;
+      margin:40px;
+     
   
-          h3 {
-              font-size: 1.8rem;
-        color: @black;
-          }
+      h3 {
+        font-size: 2rem;
+        color: white;
+        padding: 12px;
+        border: 1px solid @green;
+        border-radius: 5px;
+        background-color: @green;
+        justify-content: center;
+        display:flex;
         
- 
+      }
   
       p {
-        font-size: 14px;
+        font-size: 1.6rem;
         color: @black;
+        padding: 3px;
+        padding-top: 10px;
       }
-      
-      }
-      .aboutus {
-          display: flex;
-          flex-direction: column;
-      }
+    }
   }
-  
