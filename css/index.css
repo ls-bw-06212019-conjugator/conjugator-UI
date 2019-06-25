@@ -155,14 +155,36 @@ header nav a {
   color: #63BAFF;
 }
 /* Home Marketing page */
-.header-image {
+.top {
+  position: relative;
+}
+.top .header-image {
   overflow: hidden;
   max-width: 100vw;
   max-height: 80vh;
 }
-.header-image img {
+.top .header-image img {
   width: 100%;
   height: auto;
+}
+.top .header-button {
+  height: 300px;
+  width: 300px;
+}
+.top .header-button h2 {
+  top: 10px;
+  font-size: 3rem;
+  color: #05FFB8;
+  position: absolute;
+  top: 37%;
+  left: 60%;
+}
+.top .header-button button {
+  font-size: 1.6rem;
+  color: #2D2D2D;
+  position: absolute;
+  top: 42%;
+  left: 60%;
 }
 .container {
   width: 880px;
@@ -177,4 +199,9 @@ header nav a {
 }
 .bottom .feature h3 {
   font-size: 1.8rem;
+  color: #2D2D2D;
+}
+.bottom .feature p {
+  font-size: 1.6rem;
+  color: #2D2D2D;
 }
