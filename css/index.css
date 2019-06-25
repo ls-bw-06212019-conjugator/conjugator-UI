@@ -185,22 +185,27 @@ header nav a {
   margin: 10px;
 }
 .top .text-panel button {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #2D2D2D;
   margin: 10px;
 }
 .bottom {
   display: flex;
-  width: 880px;
+  justify-content: center;
   margin: 0 auto;
   margin-bottom: 200px;
+  background-color: #63BAFF;
 }
 .bottom .feature {
   width: 33%;
-  padding: 20px;
+  padding: 15px;
+  margin: 10px 10%;
+  border: 1px solid #2D2D2D;
+  text-align: center;
+  background-color: white;
 }
 .bottom .feature h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #2D2D2D;
   padding-bottom: 12px;
 }
