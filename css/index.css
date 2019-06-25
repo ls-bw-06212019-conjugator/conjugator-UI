@@ -244,3 +244,49 @@ header nav a {
   font-size: 1.6rem;
   color: #2D2D2D;
 }
+/* About Marketing page */
+.top {
+  position: relative;
+}
+.top .aboutheader-image .aboutimage {
+  max-width: 98%;
+  max-height: 20%;
+  margin: 1%;
+}
+.top .header-button {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+.top .header-button h4 {
+  top: 30px;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 55%;
+  background-color: #63BAFF;
+  padding: 7px;
+  border: 5px solid white;
+}
+.aboutmission {
+  display: flex;
+  width: 880px;
+  margin: 0 auto;
+}
+.aboutmission .aboutfeature {
+  width: 50%;
+  padding-bottom: 50px;
+}
+.aboutmission .aboutfeature h3 {
+  font-size: 1.8rem;
+  color: #2D2D2D;
+}
+.aboutmission .aboutfeature p {
+  font-size: 14px;
+  color: #2D2D2D;
+}
+.aboutmission .aboutus {
+  display: flex;
+  flex-direction: column;
+}
