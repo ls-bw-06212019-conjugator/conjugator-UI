@@ -175,16 +175,19 @@ header nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
 }
 .top .text-panel h2 {
   top: 10px;
   font-size: 3rem;
   color: #05FFB8;
   text-align: center;
+  margin: 10px;
 }
 .top .text-panel button {
   font-size: 1.6rem;
   color: #2D2D2D;
+  margin: 10px;
 }
 .bottom {
   display: flex;
