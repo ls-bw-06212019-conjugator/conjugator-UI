@@ -128,7 +128,21 @@ table {
 }
 html {
   font-size: 62.5%;
-  font-family: NotoSans;
+  font-family: 'Noto Sans';
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+}
+header h1 {
+  font-size: 3.6rem;
+  color: #63BAFF;
+}
+header nav a {
+  font-size: 1.6rem;
+  color: #63BAFF;
 }
 /* Home Marketing page */
 body {
@@ -136,7 +150,7 @@ body {
   margin: 0 auto;
 }
 .top {
-  height: 500px;
+  height: 100vh;
   width: inherit;
   overflow: hidden;
 }
