@@ -200,48 +200,109 @@ header nav a {
   font-size: 1.6rem;
   color: #2D2D2D;
 }
-.learn-top {
-  position: relative;
-}
 .learn-top .learn-header-image {
   overflow: hidden;
   max-width: 100vw;
-  max-height: 550px;
+  max-height: 400px;
 }
 .learn-top .learn-header-image img {
   width: 100%;
 }
-.learn-top .learn-header-button h2 {
-  top: 10px;
-  font-size: 3rem;
-  color: #05FFB8;
-  position: absolute;
-  top: 250px;
-  left: 60vw;
-}
-.learn-top .learn-header-button button {
-  font-size: 1.6rem;
-  color: #2D2D2D;
-  position: absolute;
-  top: 330px;
-  left: 60vw;
-}
 .learn-bottom {
-  display: flex;
   width: 880px;
   margin: 0 auto;
-  margin-bottom: 200px;
 }
-.learn-bottom .learn-feature {
-  width: 33%;
-  padding: 20px;
+.learn-bottom h2 {
+  font-size: 7rem;
+  text-align: center;
+  color: #05FFB8;
+  padding: 30px 0;
 }
-.learn-bottom .learn-feature h3 {
-  font-size: 1.8rem;
+.learn-bottom .learn-benefits .h3-intro {
+  height: 150px;
+  width: 880px;
+  border: 2px solid #686868;
+  display: flex;
+  margin-bottom: 30px;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-image {
+  height: inherit;
+  width: 450px;
+  overflow: hidden;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-text {
+  height: inherit;
+  width: auto;
+  margin: 10px;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-text h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
   color: #2D2D2D;
 }
-.learn-bottom .learn-feature p {
+.learn-bottom .learn-benefits .h3-intro .learn-h3-text p {
   font-size: 1.6rem;
+  color: #686868;
+}
+.learn-bottom .learn-benefits .cards-container-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 10px;
+}
+.learn-bottom .learn-benefits .cards-container-1 .card {
+  height: 400px;
+  width: 40%;
+  border: 2px solid #2D2D2D;
+}
+.learn-bottom .learn-benefits .cards-container-1 .card .headline {
+  font-size: 3rem;
+}
+.learn-bottom .learn-benefits .cards-container-1 .card .description {
+  font-size: 1.6rem;
+  color: #686868;
+}
+.learn-bottom .learn-benefits .learn-cards-image {
+  height: 250px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.learn-bottom .learn-benefits .cards-container-2 {
+  display: flex;
+}
+.learn-bottom .learn-benefits .cards-container-2 .card {
+  height: 400px;
+  width: 33%;
+  border: 2px solid #2D2D2D;
+  margin: 10px;
+}
+.learn-bottom .learn-benefits .cards-container-2 .card .headline {
+  font-size: 3rem;
+}
+.learn-bottom .learn-benefits .cards-container-2 .card .description {
+  font-size: 1.6rem;
+  color: #686868;
+}
+.learn-bottom .learn-tenses .h3-intro {
+  height: 150px;
+  width: 880px;
+  border: 2px solid #686868;
+  display: flex;
+  margin-bottom: 30px;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-image {
+  height: inherit;
+  width: 450px;
+  overflow: hidden;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text {
+  height: inherit;
+  width: 545px;
+  margin: 10px;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
   color: #2D2D2D;
 }
 /* About Marketing page */
