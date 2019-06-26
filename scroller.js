@@ -1,60 +1,40 @@
 console.log('hello world')
 
-class Tabs {
+class Scroller {
     constructor(element) {
-      this.element = element;
-  
-      this.tabLinks = {};
-      const linkElements = element.querySelectorAll('.tabs-link');
-      for (let i = 0; i < linkElements.length; i++) {
-        this.tabLinks[linkElements[i].dataset.tab] = new TabLink(linkElements[i], this);
-      }
-  
-      this.tabItems = {};
-      const itemElements = element.querySelectorAll('.tabs-item');
-      for (let i = 0; i < itemElements.length; i++) {
-        this.tabItems[itemElements[i].dataset.tab] = new TabItem(itemElements[i]);
-      }
+        this.element = element;
+
+        this.element.querySelector('.right-button').addEventListener('click', this.goRight.bind(this)) //binding necessary?
+        this.element.querySelector('.left-button').addEventListener('click', this.goLeft.bind(this))
+
+        this.chosen = '1'
+
+        this.panelElements = {}
+        this.element.querySelectorAll('.panel').forEach(div => this.panelElements[div.dataset.panelId] = div)
+
+        this.spotElements = {}
+        this.element.querySelectorAll('.spot').forEach(div => this.spotElements[div.dataset.panelId] = div)
     }
-  
-    choose(tabID) {
-      Object.keys(this.tabLinks).forEach(key => this.tabLinks[key].deselect());
-      this.tabLinks[tabID].select();
-      Object.keys(this.tabItems).forEach(key => this.tabItems[key].deselect());
-      this.tabItems[tabID].select();
+
+    goRight() {
+        const currentNum = Number(this.chosen)
+        if (currentNum > Object.keys(this.panelElements).length) {
+            this.chosen = '1'
+        } else {
+            this.chosen = String(currentNum)
+        }
+
+        this.updateDOM()
     }
-  }
-  
-  class TabLink {
-    constructor(element, parent) {
-      this.element = element;
-      this.data = element.dataset.tab;
-      
-      this.element.addEventListener('click', () => parent.choose(this.data));
-    };
-  
-    select() {
-      this.element.classList.add('tabs-link-selected');
+
+    updateDOM() {
+        Object.values(this.panelElements).forEach(div => div.classList.remove('shown'))
+        Object.values(this.spotElements).forEach(div => div.classList.remove('shown'))
+
+        this.panelElements[this.chosen].classList.add('shown')
+        this.spotElements[this.chosen].classList.add('shown')
     }
-  
-    deselect() {
-      this.element.classList.remove('tabs-link-selected');
-    }
-  }
-  
-  class TabItem {
-    constructor(element) {
-      this.element = element;
-    }
-  
-    select() {
-      this.element.classList.add('tabs-item-selected');
-    }
-  
-    deselect() {
-      this.element.classList.remove('tabs-item-selected');
-    }
-  }
-  
-  const tabSections = document.querySelectorAll('div.tabs');
-  tabSections.forEach(divElement => new Tabs(divElement));
+}
+
+const scrollers = document.querySelectorAll('div.scroller')
+scrollers.forEach(divElement => new Scroller(divElement))
