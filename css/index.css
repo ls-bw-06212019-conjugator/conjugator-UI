@@ -268,41 +268,25 @@ header nav a {
 .abouttop .aboutheader-image .aboutimage img {
   width: 100%;
 }
-.header-button {
-  height: 100px;
-  width: 100px;
-  margin: 20px;
-  margin-bottom: 0px;
-}
-.header-button h2 {
-  top: 30px;
-  font-size: 6vh;
-  color: white;
-  position: absolute;
-  top: 37%;
-  left: 55%;
-  background-color: #63BAFF;
-  padding: 12px;
-  border-radius: 7px;
-  border: 0px;
-}
 .brief h3 {
-  font-size: 3rem;
+  font-size: 50px;
   color: white;
-  border: 1px solid #05FFB8;
+  border: 1px dashed white;
   border-radius: 5px;
-  background-color: #05FFB8;
+  background-color: #63BAFF;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 2%;
   justify-content: center;
   display: flex;
   padding: 10px;
+  box-shadow: 4px, 4px,;
 }
 .brief p {
   font-size: 1.6rem;
-  color: #2D2D2D;
-  margin: 20px;
-  padding-top: 10px;
+  color: darkslategrey;
+  margin: 2%;
+  padding: 2%;
 }
 .bottom-about {
   display: flex;
@@ -314,22 +298,35 @@ header nav a {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
-  border: 2px solid #05FFB8;
+  border: 2px solid #63BAFF;
   margin: 40px;
 }
 .bottom-about .feature h3 {
   font-size: 2rem;
   color: white;
   padding: 12px;
-  border: 1px solid #05FFB8;
+  border: 1px solid #63BAFF;
   border-radius: 5px;
-  background-color: #05FFB8;
+  background-color: #63BAFF;
   justify-content: center;
   display: flex;
 }
 .bottom-about .feature p {
   font-size: 1.6rem;
-  color: darkgrey;
+  color: darkslategrey;
   padding: 12px;
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .bottom-about {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+  }
+  nav {
+    display: inline-block;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+  }
 }
