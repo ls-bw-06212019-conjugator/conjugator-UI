@@ -157,9 +157,15 @@ header nav a {
 /* Home Marketing page */
 .top {
   background-color: #63BAFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 .top div {
   background-color: white;
+  margin-right: 30px;
+  padding: 15px;
 }
 .top div h1 {
   font-size: 4rem;
@@ -169,6 +175,9 @@ header nav a {
 }
 .top button {
   background-color: white;
+  padding: 15px;
+  border: 2px solid #2D2D2D;
+  font-size: 3.5rem;
 }
 .bottom {
   display: flex;
