@@ -155,52 +155,75 @@ header nav a {
   color: #63BAFF;
 }
 /* Home Marketing page */
-.top {
-  position: relative;
-}
-.top .header-image {
-  overflow: hidden;
-  max-width: 100vw;
-  max-height: 550px;
-}
-.top .header-image img {
-  width: 100%;
-}
-.top .header-button {
-  height: 100px;
-  width: 100px;
-  margin: 20px;
-}
-.top .header-button h2 {
-  top: 30px;
-  font-size: 40px;
-  color: white;
-  position: absolute;
-  top: 37%;
-  left: 55%;
+body {
   background-color: #63BAFF;
-  padding: 7px;
-  border: 5px solid white;
 }
-.top .header-button .button {
-  font-size: 1.6rem;
+.top {
+  background-color: #63BAFF;
+}
+.top div.container {
+  margin: 0 auto;
+  padding: 3rem 0;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.top div.container div.panel {
+  background-color: white;
+  border: 2px solid #2D2D2D;
+  padding: 1rem;
+  margin: 2rem;
+}
+@media (max-width: 500px) {
+  .top div.container div.panel {
+    width: 100%;
+    border-right-style: none;
+    border-left-style: none;
+    margin: 0;
+  }
+}
+.top div.container div.panel h2 {
+  font-size: 4rem;
+  margin: 1rem;
+}
+.top div.container div.panel h3 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+.top div.container a {
+  background-color: #05FFB8;
+  padding: 1.5rem;
+  margin: 2rem;
+  border: 2px solid #2D2D2D;
+  font-size: 3.5rem;
+  text-align: center;
+  text-decoration: none;
   color: #2D2D2D;
-  position: absolute;
-  top: 42%;
-  left: 60%;
+  min-width: 4rem;
+}
+.top div.container a:hover {
+  background-color: #9effe3;
 }
 .bottom {
   display: flex;
-  width: 880px;
+  justify-content: center;
   margin: 0 auto;
   margin-bottom: 200px;
+  background-color: #63BAFF;
 }
 .bottom .feature {
   width: 33%;
-  padding: 20px;
+  padding: 15px;
+  margin: 10px 10%;
+  border: 1px solid #2D2D2D;
+  text-align: center;
+  background-color: white;
 }
 .bottom .feature h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #2D2D2D;
   padding-bottom: 12px;
 }
@@ -351,4 +374,69 @@ header nav a {
   color: #2D2D2D;
   padding: 3px;
   padding-top: 10px;
+}
+div.scroller {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 1000px;
+}
+div.scroller div.scroll-nav {
+  display: none;
+}
+@media (max-width: 1000px) {
+  div.scroller div.scroll-nav {
+    background-color: #05FFB8;
+    margin: 0 auto;
+    display: flex;
+    min-width: 500px;
+  }
+  div.scroller div.scroll-nav div.left-button,
+  div.scroller div.scroll-nav div.right-button {
+    border: 1px dashed #2D2D2D;
+    font-size: 4rem;
+    width: 20%;
+  }
+  div.scroller div.scroll-nav div.spot {
+    flex-grow: 1;
+    width: 20%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  div.scroller div.scroll-nav {
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+  }
+}
+div.scroller div.display-area {
+  background-color: #63BAFF;
+  display: flex;
+  justify-content: space-evenly;
+}
+div.scroller div.display-area div.panel {
+  background-color: white;
+  border: 2px solid #2D2D2D;
+  max-width: 300px;
+  margin: 5%;
+  padding: 1rem;
+}
+div.scroller div.display-area div.panel h3 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+div.scroller div.display-area div.panel p {
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+@media (max-width: 1000px) {
+  div.scroller div.display-area div.panel {
+    display: none;
+  }
+  div.scroller div.display-area div.panel.shown {
+    display: block;
+    border-style: none;
+  }
 }
