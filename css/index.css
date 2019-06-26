@@ -164,7 +164,7 @@ body {
 .top div.container {
   margin: 0 auto;
   padding: 3rem 0;
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -176,6 +176,7 @@ body {
   border: 2px solid #2D2D2D;
   padding: 1rem;
   margin: 2rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .top div.container div.panel {
@@ -206,30 +207,6 @@ body {
 }
 .top div.container a:hover {
   background-color: #9effe3;
-}
-.bottom {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin-bottom: 200px;
-  background-color: #63BAFF;
-}
-.bottom .feature {
-  width: 33%;
-  padding: 15px;
-  margin: 10px 10%;
-  border: 1px solid #2D2D2D;
-  text-align: center;
-  background-color: white;
-}
-.bottom .feature h3 {
-  font-size: 2rem;
-  color: #2D2D2D;
-  padding-bottom: 12px;
-}
-.bottom .feature p {
-  font-size: 1.6rem;
-  color: #2D2D2D;
 }
 .learn-top .learn-header-image {
   overflow: hidden;
@@ -405,7 +382,20 @@ div.scroller {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  max-width: 1000px;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+@media (max-width: 1000px) {
+  div.scroller {
+    border: 2px solid #2D2D2D;
+    max-width: 500px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  div.scroller {
+    border-left-style: none;
+    border-right-style: none;
+  }
 }
 div.scroller div.scroll-nav {
   display: none;
@@ -413,26 +403,36 @@ div.scroller div.scroll-nav {
 @media (max-width: 1000px) {
   div.scroller div.scroll-nav {
     background-color: #05FFB8;
-    margin: 0 auto;
     display: flex;
-    min-width: 500px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 2px solid #2D2D2D;
   }
   div.scroller div.scroll-nav div.left-button,
   div.scroller div.scroll-nav div.right-button {
-    border: 1px dashed #2D2D2D;
+    background-color: #2D2D2D;
+    color: white;
+    text-align: center;
     font-size: 4rem;
     width: 20%;
+  }
+  div.scroller div.scroll-nav div.left-button:hover,
+  div.scroller div.scroll-nav div.right-button:hover {
+    cursor: pointer;
   }
   div.scroller div.scroll-nav div.spot {
     flex-grow: 1;
     width: 20%;
+    background-color: #686868;
+  }
+  div.scroller div.scroll-nav div.spot.shown {
+    background-color: #05FFB8;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   div.scroller div.scroll-nav {
     margin: 0;
     min-width: 0;
-    width: 100%;
   }
 }
 div.scroller div.display-area {
@@ -444,8 +444,10 @@ div.scroller div.display-area div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
   max-width: 300px;
-  margin: 5%;
+  margin: 10px;
   padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 div.scroller div.display-area div.panel h3 {
   font-size: 3rem;
@@ -460,6 +462,9 @@ div.scroller div.display-area div.panel p {
     display: none;
   }
   div.scroller div.display-area div.panel.shown {
+    margin: 0;
+    max-width: none;
+    width: 100%;
     display: block;
     border-style: none;
   }
