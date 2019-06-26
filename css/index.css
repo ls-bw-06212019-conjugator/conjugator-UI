@@ -157,27 +157,37 @@ header nav a {
 /* Home Marketing page */
 .top {
   background-color: #63BAFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
-.top div {
+.top div.container {
+  margin: 30px auto;
+  max-width: 880px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top div.container div.panel {
   background-color: white;
-  margin-right: 30px;
+  border: 2px solid #2D2D2D;
   padding: 15px;
 }
-.top div h1 {
+.top div.container div.panel h2 {
   font-size: 4rem;
 }
-.top div h2 {
+.top div.container div.panel h3 {
   font-size: 3rem;
 }
-.top button {
-  background-color: white;
+.top div.container a {
+  background-color: #05FFB8;
   padding: 15px;
   border: 2px solid #2D2D2D;
   font-size: 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #2D2D2D;
+}
+.top div.container a:hover {
+  background-color: #9effe3;
 }
 .bottom {
   display: flex;
