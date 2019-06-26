@@ -318,3 +318,6 @@ header nav a {
   display: flex;
   flex-direction: column;
 }
+div.scroller {
+  background-color: #686868;
+}
