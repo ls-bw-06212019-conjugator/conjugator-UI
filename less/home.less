@@ -2,37 +2,51 @@
 
 .top {
   background-color: @blue;
-  padding: 20px;
 
   div.container {
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: 3rem 0;
     max-width: @max-horizontal;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 
       div.panel {
       background-color: white;
       border: 2px solid @black;
-      padding: 15px;
+      padding: 1rem;
+      margin: 2rem;
+
+      @media @mobile {
+        width: 100%;
+        border-right-style: none;
+        border-left-style: none;
+        margin: 0;
+      }
 
       h2 {
         font-size: 4rem;
+        margin: 1rem;
       }
 
       h3 {
         font-size: 3rem;
+        margin: 1rem;
       }
     }
 
     a {
       background-color: @green;
-      padding: 15px;
+      padding: 1.5rem;
+      margin: 2rem;
       border: 2px solid @black;
       font-size: 3.5rem;
       text-align: center;
       text-decoration: none;
       color: @black;
+      min-width: 4rem;
     }
 
     a:hover {
