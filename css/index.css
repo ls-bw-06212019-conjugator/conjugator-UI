@@ -176,6 +176,7 @@ body {
   border: 2px solid #2D2D2D;
   padding: 1rem;
   margin: 2rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .top div.container div.panel {
@@ -206,30 +207,6 @@ body {
 }
 .top div.container a:hover {
   background-color: #9effe3;
-}
-.bottom {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin-bottom: 200px;
-  background-color: #63BAFF;
-}
-.bottom .feature {
-  width: 33%;
-  padding: 15px;
-  margin: 10px 10%;
-  border: 1px solid #2D2D2D;
-  text-align: center;
-  background-color: white;
-}
-.bottom .feature h3 {
-  font-size: 2rem;
-  color: #2D2D2D;
-  padding-bottom: 12px;
-}
-.bottom .feature p {
-  font-size: 1.6rem;
-  color: #2D2D2D;
 }
 .learn-top .learn-header-image {
   overflow: hidden;
@@ -415,6 +392,10 @@ div.scroller div.scroll-nav {
     font-size: 4rem;
     width: 20%;
   }
+  div.scroller div.scroll-nav div.left-button:hover,
+  div.scroller div.scroll-nav div.right-button:hover {
+    cursor: pointer;
+  }
   div.scroller div.scroll-nav div.spot {
     flex-grow: 1;
     width: 20%;
@@ -442,6 +423,7 @@ div.scroller div.display-area div.panel {
   margin: 10px;
   padding: 1rem;
   box-sizing: border-box;
+  text-align: center;
 }
 div.scroller div.display-area div.panel h3 {
   font-size: 3rem;
