@@ -155,6 +155,9 @@ header nav a {
   color: #63BAFF;
 }
 /* Home Marketing page */
+body {
+  background-color: #63BAFF;
+}
 .top {
   background-color: #63BAFF;
 }
@@ -319,21 +322,21 @@ header nav a {
   flex-direction: column;
 }
 div.scroller {
-  background-color: #686868;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  max-width: 1000px;
 }
 div.scroller div.scroll-nav {
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   div.scroller div.scroll-nav {
     background-color: #05FFB8;
     display: flex;
-    align-self: stretch;
-    min-width: 400px;
+    max-width: 500px;
   }
   div.scroller div.scroll-nav div.left-button,
   div.scroller div.scroll-nav div.right-button {
@@ -344,5 +347,34 @@ div.scroller div.scroll-nav {
   div.scroller div.scroll-nav div.spot {
     flex-grow: 1;
     width: 20%;
+  }
+}
+div.scroller div.display-area {
+  background-color: #63BAFF;
+  display: flex;
+  justify-content: space-evenly;
+}
+div.scroller div.display-area div.panel {
+  background-color: white;
+  border: 2px solid #2D2D2D;
+  max-width: 300px;
+  margin: 5%;
+  padding: 1rem;
+}
+div.scroller div.display-area div.panel h3 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+div.scroller div.display-area div.panel p {
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+@media (max-width: 1000px) {
+  div.scroller div.display-area div.panel {
+    display: none;
+  }
+  div.scroller div.display-area div.panel.shown {
+    display: block;
+    border-style: none;
   }
 }
