@@ -221,19 +221,18 @@ header nav a {
 .learn-bottom .learn-benefits .h3-intro {
   height: 150px;
   width: 880px;
-  border: 2px solid #686868;
   display: flex;
   margin-bottom: 30px;
 }
 .learn-bottom .learn-benefits .h3-intro .learn-h3-image {
   height: inherit;
-  width: 450px;
+  width: 335px;
   overflow: hidden;
 }
 .learn-bottom .learn-benefits .h3-intro .learn-h3-text {
-  height: inherit;
-  width: auto;
-  margin: 10px;
+  height: 150px;
+  width: 545px;
+  background: linear-gradient(to bottom right, #e3f2ff, #63BAFF);
 }
 .learn-bottom .learn-benefits .h3-intro .learn-h3-text h3 {
   font-size: 3rem;
@@ -246,21 +245,24 @@ header nav a {
 }
 .learn-bottom .learn-benefits .cards-container-1 {
   display: flex;
-  justify-content: space-between;
-  padding: 0 50px;
-  margin: 10px;
+  justify-content: space-around;
 }
 .learn-bottom .learn-benefits .cards-container-1 .card {
-  height: 400px;
-  width: 40%;
-  border: 2px solid #2D2D2D;
+  height: 250px;
+  width: 50%;
+  text-align: justify;
+  padding: 18px;
+  margin: 20px 50px;
 }
-.learn-bottom .learn-benefits .cards-container-1 .card .headline {
+.learn-bottom .learn-benefits .cards-container-1 .card h4 {
   font-size: 3rem;
+  text-align: center;
+  padding-bottom: 10px;
 }
-.learn-bottom .learn-benefits .cards-container-1 .card .description {
+.learn-bottom .learn-benefits .cards-container-1 .card p {
   font-size: 1.6rem;
   color: #686868;
+  line-height: 1.2;
 }
 .learn-bottom .learn-benefits .learn-cards-image {
   height: 250px;
@@ -269,19 +271,24 @@ header nav a {
 }
 .learn-bottom .learn-benefits .cards-container-2 {
   display: flex;
+  justify-content: space-around;
 }
 .learn-bottom .learn-benefits .cards-container-2 .card {
-  height: 400px;
-  width: 33%;
-  border: 2px solid #2D2D2D;
-  margin: 10px;
+  height: 250px;
+  width: 50%;
+  text-align: justify;
+  padding: 18px;
+  margin: 20px 50px;
 }
-.learn-bottom .learn-benefits .cards-container-2 .card .headline {
+.learn-bottom .learn-benefits .cards-container-2 .card h4 {
   font-size: 3rem;
+  text-align: center;
+  padding-bottom: 10px;
 }
-.learn-bottom .learn-benefits .cards-container-2 .card .description {
+.learn-bottom .learn-benefits .cards-container-2 .card p {
   font-size: 1.6rem;
   color: #686868;
+  line-height: 1.2;
 }
 .learn-bottom .learn-tenses .h3-intro {
   height: 150px;
@@ -304,4 +311,8 @@ header nav a {
   font-size: 3rem;
   padding-bottom: 10px;
   color: #2D2D2D;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text p {
+  font-size: 1.6rem;
+  color: #686868;
 }
