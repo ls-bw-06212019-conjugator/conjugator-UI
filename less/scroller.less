@@ -5,11 +5,16 @@ div.scroller {
     justify-content: center;
     align-content: center;
     max-width: @max-horizontal;
-    box-sizing: content-box;
+    box-sizing: border-box;
 
     @media @tablet {
         border: 2px solid @black;
-        max-width: 500px;
+        max-width: @mobile-size;
+
+        @media @mobile {
+            border-left-style: none;
+            border-right-style: none;
+        }
     }
 
     div.scroll-nav {
@@ -17,12 +22,15 @@ div.scroller {
 
         @media @tablet {
             background-color: @green;
-            margin: 0 auto;
             display: flex;
-            min-width: 500px;
+            box-sizing: border-box;
+            width: 100%;
+            border-bottom: 2px solid @black;
 
             div.left-button, div.right-button {
-                border: 1px dashed @black;
+                background-color: @black;
+                color: white;
+                text-align: center;
                 font-size: 4rem;
                 width: 20%;
             }
@@ -30,12 +38,16 @@ div.scroller {
             div.spot {
                 flex-grow: 1;
                 width: 20%;
+                background-color: @gray;
+            }
+
+            div.spot.shown {
+                background-color: @green;
             }
 
             @media @mobile {
                 margin: 0;
                 min-width: 0;
-                width: 100%;
             }
         }
     }
@@ -70,7 +82,7 @@ div.scroller {
             }
             div.panel.shown {
                 margin: 0;
-                max-width: 500px;
+                max-width: none;
                 width: 100%;
                 display: block;
                 border-style: none;
