@@ -5,6 +5,12 @@ div.scroller {
     justify-content: center;
     align-content: center;
     max-width: @max-horizontal;
+    box-sizing: content-box;
+
+    @media @tablet {
+        border: 2px solid @black;
+        max-width: 500px;
+    }
 
     div.scroll-nav {
         display: none;
@@ -43,8 +49,9 @@ div.scroller {
             background-color: white;
             border: 2px solid @black;
             max-width: 300px;
-            margin: 5%;
+            margin: 10px;
             padding: 1rem;
+            box-sizing: border-box;
 
             h3 {
                 font-size: 3rem;
@@ -62,6 +69,9 @@ div.scroller {
                 display: none;
             }
             div.panel.shown {
+                margin: 0;
+                max-width: 500px;
+                width: 100%;
                 display: block;
                 border-style: none;
             }

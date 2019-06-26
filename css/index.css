@@ -382,6 +382,13 @@ div.scroller {
   justify-content: center;
   align-content: center;
   max-width: 1000px;
+  box-sizing: content-box;
+}
+@media (max-width: 1000px) {
+  div.scroller {
+    border: 2px solid #2D2D2D;
+    max-width: 500px;
+  }
 }
 div.scroller div.scroll-nav {
   display: none;
@@ -420,8 +427,9 @@ div.scroller div.display-area div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
   max-width: 300px;
-  margin: 5%;
+  margin: 10px;
   padding: 1rem;
+  box-sizing: border-box;
 }
 div.scroller div.display-area div.panel h3 {
   font-size: 3rem;
@@ -436,6 +444,9 @@ div.scroller div.display-area div.panel p {
     display: none;
   }
   div.scroller div.display-area div.panel.shown {
+    margin: 0;
+    max-width: 500px;
+    width: 100%;
     display: block;
     border-style: none;
   }
