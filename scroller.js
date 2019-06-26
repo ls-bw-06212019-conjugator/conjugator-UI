@@ -18,16 +18,29 @@ class Scroller {
 
     goRight() {
         const currentNum = Number(this.chosen)
-        if (currentNum > Object.keys(this.panelElements).length) {
+        console.log('trying to increment from', currentNum)
+        if (currentNum >= Object.keys(this.panelElements).length) {
             this.chosen = '1'
         } else {
-            this.chosen = String(currentNum)
+            this.chosen = String(currentNum + 1)
+        }
+
+        this.updateDOM()
+    }
+
+    goLeft() {
+        const currentNum = Number(this.chosen)
+        if (currentNum === 1) {
+            this.chosen = String(Object.keys(this.panelElements).length)
+        } else {
+            this.chosen = String(currentNum - 1)
         }
 
         this.updateDOM()
     }
 
     updateDOM() {
+        console.log('current selection:', this.chosen)
         Object.values(this.panelElements).forEach(div => div.classList.remove('shown'))
         Object.values(this.spotElements).forEach(div => div.classList.remove('shown'))
 
