@@ -1,3 +1,29 @@
 div.scroller {
     background-color: @gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div.scroll-nav {
+        display: none;
+        
+        @media @mobile {
+            background-color: @green;
+            display: flex;
+            align-self: stretch;
+            min-width: 400px;
+
+            div.left-button, div.right-button {
+                border: 1px dashed @black;
+                font-size: 4rem;
+                width: 20%;
+            }
+
+            div.spot {
+                flex-grow: 1;
+                width: 20%;
+            }
+        }
+    }
 }

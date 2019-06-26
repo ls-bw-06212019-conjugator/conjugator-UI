@@ -320,4 +320,29 @@ header nav a {
 }
 div.scroller {
   background-color: #686868;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.scroller div.scroll-nav {
+  display: none;
+}
+@media (max-width: 500px) {
+  div.scroller div.scroll-nav {
+    background-color: #05FFB8;
+    display: flex;
+    align-self: stretch;
+    min-width: 400px;
+  }
+  div.scroller div.scroll-nav div.left-button,
+  div.scroller div.scroll-nav div.right-button {
+    border: 1px dashed #2D2D2D;
+    font-size: 4rem;
+    width: 20%;
+  }
+  div.scroller div.scroll-nav div.spot {
+    flex-grow: 1;
+    width: 20%;
+  }
 }
