@@ -166,20 +166,28 @@ header nav a {
 .top .header-image img {
   width: 100%;
 }
-.top .header-button h2 {
-  top: 10px;
-  font-size: 3rem;
-  color: #05FFB8;
-  position: absolute;
-  top: 250px;
-  left: 60vw;
+.top .header-button {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
 }
-.top .header-button button {
+.top .header-button h2 {
+  top: 30px;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 55%;
+  background-color: #63BAFF;
+  padding: 7px;
+  border: 5px solid white;
+}
+.top .header-button .button {
   font-size: 1.6rem;
   color: #2D2D2D;
   position: absolute;
-  top: 330px;
-  left: 60vw;
+  top: 42%;
+  left: 60%;
 }
 .bottom {
   display: flex;
@@ -313,41 +321,52 @@ header nav a {
   max-width: 98%;
   max-height: 20%;
   margin: 1%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .top .header-button {
   height: 100px;
   width: 100px;
   margin: 20px;
 }
-.top .header-button h4 {
+.top .header-button h2 {
   top: 30px;
-  font-size: 40px;
+  font-size: 6vh;
   color: white;
   position: absolute;
   top: 37%;
   left: 55%;
   background-color: #63BAFF;
-  padding: 7px;
-  border: 5px solid white;
+  padding: 12px;
+  border-radius: 7px;
+  border: 0px;
 }
-.aboutmission {
+.bottom-about {
   display: flex;
-  width: 880px;
-  margin: 0 auto;
+  align-content: top;
+  justify-content: space-evenly;
+  width: 100%;
 }
-.aboutmission .aboutfeature {
+.bottom-about .feature {
   width: 50%;
-  padding-bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #05FFB8;
+  margin: 40px;
 }
-.aboutmission .aboutfeature h3 {
-  font-size: 1.8rem;
-  color: #2D2D2D;
-}
-.aboutmission .aboutfeature p {
-  font-size: 14px;
-  color: #2D2D2D;
-}
-.aboutmission .aboutus {
+.bottom-about .feature h3 {
+  font-size: 2rem;
+  color: white;
+  padding: 12px;
+  border: 1px solid #05FFB8;
+  border-radius: 5px;
+  background-color: #05FFB8;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
+}
+.bottom-about .feature p {
+  font-size: 1.6rem;
+  color: #2D2D2D;
+  padding: 3px;
+  padding-top: 10px;
 }
