@@ -208,16 +208,6 @@ header nav a {
 .learn-top .learn-header-image img {
   width: 100%;
 }
-.learn-top .learn-title {
-  height: 150px;
-  width: 300px;
-  border: 2px solid red;
-}
-.learn-top .learn-title h2 {
-  font-size: 7rem;
-  color: #05FFB8;
-  text-align: center;
-}
 .learn-bottom {
   width: 880px;
   margin: 0 auto;
@@ -225,4 +215,58 @@ header nav a {
 .learn-bottom h2 {
   font-size: 7rem;
   text-align: center;
+  color: #05FFB8;
+  padding: 30px 0;
+}
+.learn-bottom .learn-benefits .h3-intro {
+  height: 150px;
+  width: 880px;
+  border: 2px solid #686868;
+  display: flex;
+  margin-bottom: 30px;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-image {
+  height: inherit;
+  width: 450px;
+  overflow: hidden;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-text {
+  height: inherit;
+  width: auto;
+  margin: 10px;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-text h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+  color: #2D2D2D;
+}
+.learn-bottom .learn-benefits .h3-intro .learn-h3-text p {
+  font-size: 1.6rem;
+  color: #686868;
+}
+.learn-bottom .learn-tenses .h3-intro {
+  height: 150px;
+  width: 880px;
+  border: 2px solid #686868;
+  display: flex;
+  margin-bottom: 30px;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-image {
+  height: inherit;
+  width: 450px;
+  overflow: hidden;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text {
+  height: inherit;
+  width: 545px;
+  margin: 10px;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+  color: #2D2D2D;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text p {
+  font-size: 1.6rem;
+  color: #686868;
 }
