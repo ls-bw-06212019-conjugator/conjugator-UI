@@ -299,23 +299,34 @@ div.shaded {
   color: #2D2D2D;
 }
 .learn-bottom .learn-tenses .accordion-container {
-  width: 100%;
   border: 2px solid blue;
+  width: 100%;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links {
-  width: 75%;
+  display: flex;
+  flex-direction: column;
   border: 2px solid black;
-  height: 50px;
+  margin: 0 110px;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .panel-link {
   cursor: pointer;
+  font-size: 1.8rem;
+  margin: 16px 0;
+  text-align: center;
 }
-.learn-bottom .learn-tenses .accordion-container .panel-links .active-panel-link:hover {
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel-link:hover {
   color: #05FFB8;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .panel {
+  display: flex;
+  flex-direction: column;
   display: none;
-  overflow: hidden;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 20px;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel .tense-description {
+  font-size: 1.6rem;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .active-panel {
   display: flex;
