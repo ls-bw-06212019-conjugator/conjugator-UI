@@ -1,33 +1,30 @@
 class PanelsLink {
-  constructor(accordionElement) {
-    this.accordionElement = accordionElement;
-    this.panelData = this.accordionElement.dataset.tense;
+  constructor(element) {
+    this.element = element;
+    this.data = this.element.dataset.tense;
     this.itemElement = document.querySelector(`.panel[data-tense='${this.panelData}']`);
-    this.panelElement = new PanelItem(this.panelElement);
+    this.panelElement = new PanelItem(this.itemElement);
     this.element.addEventListener('click', () => this.select())
   }
 
   select() {
-
+    const links = document.querySelectorAll('.panel');
+    Array.from(links).forEach(element => element.classList.remove('active-panel'));
+    this.element.classList.add('active-panel');
+    this.panelItem.select();
   }
 }
 
 class PanelItem {
-  constructor(accordionElement) {
-    // Assign this.element to the passed in element
-    this.element = accordionElement;
+  constructor(element) {
+    this.element = element;
   }
 
   select() {
-    // Select all ".tabs-item" elements from the DOM
-    const items = document.querySelectorAll('.tabs-item');
-
-    // Remove the class "tabs-item-selected" from each element
-    Array.from(items).forEach(element => element.classList.remove('tabs-item-selected'));
-
-    // Add a class named "tabs-item-selected" to this element
-    this.element.classList.add('tabs-item-selected');
+    const items = document.querySelectorAll('.panel');
+    Array.from(items).forEach(element => element.classList.remove('active-panel'));
+    this.element.classList.add('active-panel');
   }
 }
 
-let links = document.querySelectorAll('.tabs-link').forEach(link => new TabLink(link));
+let panels = document.querySelectorAll('.panel').forEach(panel => new PanelLink(panel));
