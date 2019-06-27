@@ -253,16 +253,22 @@ header nav a {
   color: #2D2D2D;
 }
 /* About Marketing page */
+.aboutpage {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .abouttop {
   position: relative;
   padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 .abouttop .aboutheader-image .aboutimage {
   margin: 1%;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  overflow: hidden;
-  max-width: 100vw;
+  overflow-x: hidden;
+  max-width: 100%;
   max-height: 400px;
 }
 .abouttop .aboutheader-image .aboutimage img {
@@ -288,45 +294,48 @@ header nav a {
   margin: 2%;
   padding: 2%;
 }
-.bottom-about {
+.bottomabout {
   display: flex;
   align-content: top;
   justify-content: space-evenly;
   width: 100%;
 }
-.bottom-about .feature {
+.bottomabout .feature {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
   border: 2px solid #63BAFF;
   margin: 40px;
 }
-.bottom-about .feature h3 {
+.bottomabout .feature h3 {
   font-size: 2rem;
   color: white;
   padding: 12px;
-  border: 1px solid #63BAFF;
+  border: 1px solid #05FFB8;
   border-radius: 5px;
-  background-color: #63BAFF;
+  background-color: #05FFB8;
   justify-content: center;
   display: flex;
 }
-.bottom-about .feature p {
+.bottomabout .feature p {
   font-size: 1.6rem;
   color: darkslategrey;
   padding: 12px;
   padding-top: 10px;
 }
 @media (max-width: 500px) {
-  .bottom-about {
+  .bottomabout {
     display: inline-block;
     width: 100%;
     align-content: center;
   }
-  nav {
-    display: inline-block;
-    width: 500px;
+  .logolink {
+    display: none;
+  }
+  .logolink .nav {
+    display: flex;
+    width: 20%;
     overflow: hidden;
-    position: relative;
+    position: absolute;
   }
 }
