@@ -1,16 +1,16 @@
-class PanelsLink {
+class PanelLink {
   constructor(element) {
     this.element = element;
     this.data = this.element.dataset.tense;
-    this.itemElement = document.querySelector(`.panel[data-tense='${this.panelData}']`);
-    this.panelElement = new PanelItem(this.itemElement);
+    this.itemElement = document.querySelector(`.panel[data-tense='${this.data}']`);
+    this.panelItem = new PanelItem(this.itemElement);
     this.element.addEventListener('click', () => this.select())
   }
 
   select() {
-    const links = document.querySelectorAll('.panel');
-    Array.from(links).forEach(element => element.classList.remove('active-panel'));
-    this.element.classList.add('active-panel');
+    const links = document.querySelectorAll('.panel-link');
+    Array.from(links).forEach(element => element.classList.remove('active-panel-link'));
+    this.element.classList.add('active-panel-link');
     this.panelItem.select();
   }
 }
@@ -27,4 +27,4 @@ class PanelItem {
   }
 }
 
-let panels = document.querySelectorAll('.panel').forEach(panel => new PanelLink(panel));
+let links = document.querySelectorAll('.panel-link').forEach(link => new PanelLink(link));

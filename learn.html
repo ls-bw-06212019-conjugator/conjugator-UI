@@ -16,6 +16,8 @@
 
 <body>
 
+  <script defer="defer" src="./accordion.js"></script>
+
   <header>
     <a href='index.html'><h1>Conjugator</h1></a>
     <nav>
@@ -36,19 +38,9 @@
     <h2>Learn!</h2>
 
     <div class='learn-benefits'>
-      <!-- <div class='h3-intro'>
-        <div class='learn-h3-image'>
-          <img src="assets/learn-dancing.jpg" alt='Women dancing in traditional dress'>
-        </div>
-        <div class='learn-h3-text'>
-          <h3>Benefits of learning a foreign language</h3>
-          <p>There are so many benefits of learning a foreign language. Take a look!</p>
-        </div>
-      </div> -->
 
       <div class="cards-container-1">
 
-        <!-- CARD COMPONENTS -->
         <div class="card">
           <h4>Advance your career</h4>
           <p>Language skills are among the top eight skills required of all occupations—no matter your sector or skill level—and the demand for bilingual professionals is rising exponentially. In fact, between 2010 and 2015, the number of U.S. job postings specifically geared toward bilingual candidates more than doubled.</p>
@@ -95,23 +87,23 @@
       <div class='accordion-container'>
 
         <!-- ACCORDION COMPONENTS -->
-        <div class='accordion-panels'>
 
-          <div class="panels-links">
-            <div class="panels-link active-panel" data-tense='present'>Present</div>
-            <div class="panels-link" data-tense='preterite'>Preterite</div>
-            <div class="panels-link" data-tense='imperfect'>Imperfect</div>
-            <div class="panels-link" data-tense='future'>Future</div>
-            <div class="panels-link" data-tense='conditional'>Conditional</div>
-            <div class="panels-link" data-tense='present-perfect'>Present Perfect</div>
-            <div class="panels-link" data-tense='future-perfect'>Future Perfect</div>
-            <div class="panels-link" data-tense='past-perfect'>Past Perfect</div>
-            <div class="panels-link" data-tense='conditional-perfect'>Conditional Perfect</div>
-            <div class="panels-link" data-tense='subjunctive-present'>Subjunctive Present</div>
-            <div class="panels-link" data-tense='subjunctive-imperfect'>Subjunctive Imperfect</div>
-            <div class="panels-link" data-tense='subjunctive-present-perfect'>Subjunctive Present Perfect</div>
-          </div>
+        <div class="panel-links">
+          <div class="panel-link active-panel-link" data-tense='present'>Present</div>
+          <div class="panel-link" data-tense='preterite'>Preterite</div>
+          <div class="panel-link" data-tense='imperfect'>Imperfect</div>
+          <div class="panel-link" data-tense='future'>Future</div>
+          <div class="panel-link" data-tense='conditional'>Conditional</div>
+          <div class="panel-link" data-tense='present-perfect'>Present Perfect</div>
+          <div class="panel-link" data-tense='future-perfect'>Future Perfect</div>
+          <div class="panel-link" data-tense='past-perfect'>Past Perfect</div>
+          <div class="panel-link" data-tense='conditional-perfect'>Conditional Perfect</div>
+          <div class="panel-link" data-tense='subjunctive-present'>Subjunctive Present</div>
+          <div class="panel-link" data-tense='subjunctive-imperfect'>Subjunctive Imperfect</div>
+          <div class="panel-link" data-tense='subjunctive-present-perfect'>Subjunctive Present Perfect</div>
+        </div>
 
+        <div class='panel-cards'>
           <div class='panel active-panel' data-tense='present'>
             <div class='tense-header'>
               <h4>Present</h4>
