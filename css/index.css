@@ -291,6 +291,9 @@ div.shaded {
   color: #686868;
   line-height: 1.2;
 }
+.learn-bottom .learn-tenses {
+  border: 2px solid red;
+}
 .learn-bottom .learn-tenses .h3-intro {
   height: 150px;
   width: 880px;
@@ -312,6 +315,30 @@ div.shaded {
   font-size: 3rem;
   padding-bottom: 10px;
   color: #2D2D2D;
+}
+.learn-bottom .learn-tenses .accordion-container {
+  width: 100%;
+  border: 2px solid blue;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links {
+  width: 75%;
+  border: 2px solid black;
+  height: 50px;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel-link {
+  cursor: pointer;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .active-panel-link:hover {
+  color: #05FFB8;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel {
+  display: none;
+  overflow: hidden;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .active-panel {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
 }
 /* About Marketing page */
 .abouttop {
