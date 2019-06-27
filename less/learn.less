@@ -16,12 +16,8 @@
 }
 
 .learn-bottom {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
-
-  @media @mobile {
-    width: 100vw;
-  }
 
   h2 {
     font-size: 7.0rem;
@@ -37,16 +33,17 @@
 
   @media @mobile {
     flex-direction: column;
+    box-sizing: border-box;
   }
 
   .card {
     width: 50%;
     text-align: justify;
-    padding: 18px;
-    margin: 0 40px;
+    padding: 20px;
 
     @media @mobile {
       margin: 0 auto;
+      width: 80%;
     }
 
     h4 {
@@ -73,11 +70,20 @@
   display: flex;
   justify-content: space-around;
 
+  @media @mobile {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
   .card {
     width: 50%;
     text-align: justify;
-    padding: 18px;
-    margin: 0 40px;
+    padding: 20px;
+
+    @media @mobile {
+      margin: 0 auto;
+      width: 80%;
+    }
 
     h4 {
       font-size: 3.0rem;
@@ -104,6 +110,14 @@
 
   .learn-h3-image {
     margin: 0 auto;
+
+    @media @mobile {
+      max-width: 100vw;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .learn-h3-text {
@@ -124,7 +138,7 @@
 }
 
 .learn-bottom .learn-tenses .accordion-container {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 
   .panel-links {
