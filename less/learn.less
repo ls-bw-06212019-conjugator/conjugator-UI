@@ -67,7 +67,7 @@
     width: 50%;
     text-align: justify;
     padding: 18px;
-    margin: 20px 50px;
+    margin: 0 50px;
 
     h4 {
       font-size: 3.0rem;
@@ -83,44 +83,43 @@
   }
 }
 
-.learn-bottom .learn-tenses {
-  border: 2px solid red;
+.learn-bottom {
+  margin-bottom: 80px;
+}
 
-  .h3-intro {
-    height: 150px;
-    width: 880px;
-    border: 2px solid @gray;
-    display: flex;
-    margin-bottom: 30px;
+.learn-bottom .learn-tenses .h3-intro {
+  width: 880px;
+  border: 2px solid @gray;
+  display: flex;
+  margin: 60px 0;
 
-    .learn-h3-image {
-      height: inherit;
-      width: 450px;
-      overflow: hidden;
+  .learn-h3-image {
+    height: inherit;
+    width: 75%
+    overflow: hidden;
+  }
+
+  .learn-h3-text {
+    height: inherit;
+    width: 545px;
+    margin: 10px;
+
+    h3 {
+      font-size: 3.0rem;
+      padding-bottom: 10px;
+      color: @black;
     }
 
-    .learn-h3-text {
-      height: inherit;
-      width: 545px;
-      margin: 10px;
-
-      h3 {
-        font-size: 3.0rem;
-        padding-bottom: 10px;
-        color: @black;
-      }
-
-      p {
-        font-size: 1.6rem;
-        color: @gray;
-      }
+    p {
+      font-size: 1.6rem;
+      color: @gray;
     }
   }
 }
 
 .learn-bottom .learn-tenses .accordion-container {
-  border: 2px solid blue;
-  width: 100%;
+  width: 700px;
+  margin: 0 auto;
 
   .panel-links {
     width: inherit;
@@ -150,13 +149,13 @@
 
       p {
         padding-bottom: 10px;
+        color: @gray;
       }
     }
 
     .active-panel {
       display: flex;
       flex-direction: column;
-      border: 2px solid grey;
     }
   }
 }

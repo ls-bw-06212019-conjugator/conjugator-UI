@@ -261,7 +261,7 @@ div.shaded {
   width: 50%;
   text-align: justify;
   padding: 18px;
-  margin: 20px 50px;
+  margin: 0 50px;
 }
 .learn-bottom .learn-benefits .cards-container-2 .card h4 {
   font-size: 3rem;
@@ -273,20 +273,19 @@ div.shaded {
   color: #686868;
   line-height: 1.2;
 }
-.learn-bottom .learn-tenses {
-  border: 2px solid red;
+.learn-bottom {
+  margin-bottom: 80px;
 }
 .learn-bottom .learn-tenses .h3-intro {
-  height: 150px;
   width: 880px;
   border: 2px solid #686868;
   display: flex;
-  margin-bottom: 30px;
+  margin: 60px 0;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-image {
   height: inherit;
-  width: 450px;
-  overflow: hidden;
+  width: 75%
+    overflow: hidden;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-text {
   height: inherit;
@@ -303,8 +302,8 @@ div.shaded {
   color: #686868;
 }
 .learn-bottom .learn-tenses .accordion-container {
-  border: 2px solid blue;
-  width: 100%;
+  width: 700px;
+  margin: 0 auto;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links {
   width: inherit;
@@ -332,11 +331,11 @@ div.shaded {
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .panel p {
   padding-bottom: 10px;
+  color: #686868;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .active-panel {
   display: flex;
   flex-direction: column;
-  border: 2px solid grey;
 }
 /* About Marketing page */
 .abouttop {
