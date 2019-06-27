@@ -19,32 +19,36 @@
     <a href='index.html'><h1>Conjugator</h1></a>
     <nav>
       <a href='about.html'>About</a>
-      <a href='#'>Contact</a>
+      <a href='contact.htlm'>Contact</a>
       <a href='learn.html'>Learn</a>
       <a href='#'>Log In</a>
     </nav>
   </header>
-  
-  <div class="aboutpage">
 
-    <div class='abouttop'>
-      <div class='aboutheader-image'>
-        <img class='aboutimage' src="Screen Shot 2019-06-26 at 4.20.35 PM.png">
-      </div>
-    </div>
+  <div class='contact-image'></div>
 
-    <div class = "contact">
-      <h3> Contact Us </h3>
-      <div>Name</div>
-      <div></div>
-      <div>Email
+  <h2>Contact</h2>
+
+  <div class="contact">
+    <form>
+      <div class='fill-in'>
+        <div class='input'>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name='name'><br>
+        </div>
+        <div class="input">
+          <label for="email">Email</label>
+          <input type='text' id='email' name='email'><br>
+        </div>
+        <div class="input">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" style="height:200px"></textarea>
+        <div>
       </div>
-      <div></div>
-      <div>Message</div>
-      <div></div>
-    </div>
-   
-        
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
   </div>
 
 </body>
