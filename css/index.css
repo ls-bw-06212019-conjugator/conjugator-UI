@@ -190,12 +190,8 @@ div.shaded {
   min-height: 100vh;
   overflow: auto;
 }
-.top {
-  background-color: #63BAFF;
-}
-.top div.container {
+div.container {
   margin: 0 auto;
-  padding: 3rem 0;
   max-width: 1200px;
   display: flex;
   justify-content: space-around;
@@ -203,45 +199,51 @@ div.shaded {
   align-content: center;
   flex-wrap: wrap;
 }
-.top div.container div.panel {
+div.container div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
+  border-radius: 8px;
   padding: 1rem;
   margin: 2rem;
   text-align: center;
+  min-width: 500px;
+  box-sizing: border-box;
 }
 @media (max-width: 500px) {
-  .top div.container div.panel {
+  div.container div.panel {
     width: 100%;
     border-right-style: none;
     border-left-style: none;
+    border-radius: 0;
     margin: 0;
+    min-width: initial;
   }
-  .top div.container div.panel h2,
-  .top div.container div.panel h3 {
+  div.container div.panel h2,
+  div.container div.panel h3 {
     margin: 1rem 0;
   }
 }
-.top div.container div.panel h2 {
+div.container div.panel h2 {
   font-size: 4rem;
   margin: 1rem;
 }
-.top div.container div.panel h3 {
+div.container div.panel h3 {
   font-size: 3rem;
   margin: 1rem;
 }
-.top div.container a {
+div.container a {
   background-color: #05FFB8;
   text-align: center;
   text-decoration: none;
   color: white;
-  padding: 1.5rem;
+  padding: 1.8rem;
   margin: 2rem;
-  border: 2px solid #2D2D2D;
+  border: 5px solid white;
+  border-radius: 50%;
   font-size: 3.5rem;
   min-width: 4rem;
 }
-.top div.container a:hover {
+div.container a:hover {
   background-color: #03FF76;
   cursor: pointer;
 }
