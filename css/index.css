@@ -190,6 +190,10 @@ div.shaded {
   min-height: 100vh;
   overflow: auto;
 }
+.background {
+  background-image: url('../assets/texture-yellow-wall.jpg');
+  background-position: center bottom;
+}
 div.container {
   margin: 0 auto;
   max-width: 1200px;
