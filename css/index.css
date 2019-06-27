@@ -283,14 +283,10 @@ div.shaded {
   margin: 60px 0;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-image {
-  height: inherit;
-  width: 75%
-    overflow: hidden;
+  width: 75%;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-text {
-  height: inherit;
-  width: 545px;
-  margin: 10px;
+  margin: 5px;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-text h3 {
   font-size: 3rem;
