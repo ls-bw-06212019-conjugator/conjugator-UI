@@ -25,13 +25,15 @@ div.container {
     margin: 2rem;
     text-align: center;
     min-width: @mobile-size;
+    box-sizing: border-box;
 
     @media @mobile {
       width: 100%;
       border-right-style: none;
       border-left-style: none;
+      border-radius: 0;
       margin: 0;
-      min-width: none;
+      min-width: initial;
 
       h2, h3 {margin: 1rem 0;}
     }

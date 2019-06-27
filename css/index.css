@@ -207,14 +207,16 @@ div.container div.panel {
   margin: 2rem;
   text-align: center;
   min-width: 500px;
+  box-sizing: border-box;
 }
 @media (max-width: 500px) {
   div.container div.panel {
     width: 100%;
     border-right-style: none;
     border-left-style: none;
+    border-radius: 0;
     margin: 0;
-    min-width: none;
+    min-width: initial;
   }
   div.container div.panel h2,
   div.container div.panel h3 {
