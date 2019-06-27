@@ -6,39 +6,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Conjugator.io</title>
+    <title>Conjugator</title>
 
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <div>
-        <h1>Conjugator.io</h1>
-        <div>
-            <img src="assets/tense.jpeg">
-            <div>
-                <h2>The Rat The Cat The Dog Bit Chased Escaped.</h2>
-                <button>conjugate</button>
+
+    <div class='shaded'>
+        <script defer="defer" src="./scroller.js"></script>
+
+        <header style="background-color: white">
+            <a href='#'>
+                <h1>Conjugator</h1>
+            </a>
+            <nav>
+                <a href='about.html'>About</a>
+                <a href='#'>Contact</a>
+                <a href='learn.html'>Learn</a>
+                <a href='#'>Log In</a>
+            </nav>
+        </header>
+
+        <div class='top'>
+            <div class="container">
+                <div class="panel">
+                    <h2>Conjugate to your heart's content.</h2>
+                    <h3>Quiz yourself on Spanish verb conjugation.</h3>
+                </div>
+                <a href="#">Log In</a>
             </div>
         </div>
-        
+
+        <div class='scroller'>
+            <div class='scroll-nav'>
+                <div class='left-button'>&lt;</div>
+                <div class='spot shown' data-panel-id='1'></div>
+                <div class='spot' data-panel-id='2'></div>
+                <div class='spot' data-panel-id='3'></div>
+                <div class='right-button'>></div>
+            </div>
+            <div class='display-area'>
+                <div class='panel shown' data-panel-id='1'>
+                    <h3>At your fingertips</h3>
+                    <p>Drill and repetition make conjugation second nature</p>
+                </div>
+                <div class='panel' data-panel-id='2'>
+                    <h3>Over 6,000 verbs</h3>
+                    <p>12 tenses to practice with, from simple present to subjunctive imperfect, i.e. from yo hablo to yo
+                        hablara</p>
+                </div>
+                <div class='panel' data-panel-id='3'>
+                    <h3>Immediate feedback</h3>
+                    <p>Learn from your mistakes.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <div>
-            <h3>The Rat The Cat The Dog Bit Chased Escaped.</h3>
-            <p>For me, the collision of Probability Theory and Truth has always seemed to center around the notion that the former is a precise mathematical object, and the latter is not. Whether or not it was written down by Isaac Newton, it’s the same physical thing. Whether or not you could observe the first unicorn in America and say that it was the “missing link” in Abraham Lincoln’s biography - well, you couldn’t observe much from the experience of seeing the first unicorn in America. Either Lincoln existed in our universe, or you couldn’t say where one existed.</p>
-        </div>
-        <div>
-            <h3>The Rat The Cat The Dog Bit Chased Escaped.</h3>
-            <p>For me, the collision of Probability Theory and Truth has always seemed to center around the notion that the former is a precise mathematical object, and the latter is not. Whether or not it was written down by Isaac Newton, it’s the same physical thing. Whether or not you could observe the first unicorn in America and say that it was the “missing link” in Abraham Lincoln’s biography - well, you couldn’t observe much from the experience of seeing the first unicorn in America. Either Lincoln existed in our universe, or you couldn’t say where one existed.</p>
-        </div>
-        <div>
-            <h3>The Rat The Cat The Dog Bit Chased Escaped.</h3>
-            <p>For me, the collision of Probability Theory and Truth has always seemed to center around the notion that the former is a precise mathematical object, and the latter is not. Whether or not it was written down by Isaac Newton, it’s the same physical thing. Whether or not you could observe the first unicorn in America and say that it was the “missing link” in Abraham Lincoln’s biography - well, you couldn’t observe much from the experience of seeing the first unicorn in America. Either Lincoln existed in our universe, or you couldn’t say where one existed.</p>
-        </div>
-    </div>
+
     <footer>The Rat The Cat The Dog Bit Chased Escaped.</footer>
+
 </body>
 
 </html>
