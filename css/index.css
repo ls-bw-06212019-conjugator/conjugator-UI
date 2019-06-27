@@ -175,6 +175,9 @@ header.full-size {
 /* Home Marketing page */
 div.shaded {
   background-color: #63BAFF;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
 }
 .top {
   background-color: #63BAFF;
@@ -202,6 +205,10 @@ div.shaded {
     border-right-style: none;
     border-left-style: none;
     margin: 0;
+  }
+  .top div.container div.panel h2,
+  .top div.container div.panel h3 {
+    margin: 1rem 0;
   }
 }
 .top div.container div.panel h2 {
@@ -371,13 +378,15 @@ div.shaded {
   padding-top: 10px;
 }
 div.scroller {
-  margin: 0 auto;
+  margin: 15px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   max-width: 1200px;
   box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
   div.scroller {
@@ -389,6 +398,7 @@ div.scroller {
   div.scroller {
     border-left-style: none;
     border-right-style: none;
+    border-radius: 0;
   }
 }
 div.scroller div.scroll-nav {
@@ -396,15 +406,17 @@ div.scroller div.scroll-nav {
 }
 @media (max-width: 1000px) {
   div.scroller div.scroll-nav {
-    background-color: #05FFB8;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     width: 100%;
     border-bottom: 2px solid #2D2D2D;
+    background-color: grey;
   }
   div.scroller div.scroll-nav div.left-button,
   div.scroller div.scroll-nav div.right-button {
-    background-color: #2D2D2D;
+    background-color: #05FFB8;
     color: white;
     text-align: center;
     font-size: 4rem;
@@ -413,14 +425,16 @@ div.scroller div.scroll-nav {
   div.scroller div.scroll-nav div.left-button:hover,
   div.scroller div.scroll-nav div.right-button:hover {
     cursor: pointer;
+    background-color: #03FF76;
   }
   div.scroller div.scroll-nav div.spot {
-    flex-grow: 1;
-    width: 20%;
-    background-color: #686868;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2D2D2D;
   }
   div.scroller div.scroll-nav div.spot.shown {
-    background-color: #05FFB8;
+    background-color: white;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
@@ -430,7 +444,6 @@ div.scroller div.scroll-nav {
   }
 }
 div.scroller div.display-area {
-  background-color: #63BAFF;
   display: flex;
   justify-content: space-evenly;
 }
