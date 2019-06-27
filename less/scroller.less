@@ -38,11 +38,21 @@ div.scroller {
                 text-align: center;
                 font-size: 4rem;
                 width: 20%;
+                -moz-user-select: none;
+                user-select: none;
             }
             
             div.left-button:hover, div.right-button:hover {
                 cursor: pointer;
                 background-color: @green-hover;
+            }
+
+            div.left-button {
+                border-right: 2px solid @black;
+            }
+
+            div.right-button {
+                border-left: 2px solid @black;
             }
 
             div.spot {
@@ -70,6 +80,7 @@ div.scroller {
         div.panel {
             background-color: white;
             border: 2px solid @black;
+            border-radius: 8px;
             max-width: 300px;
             margin: 10px;
             padding: 1rem;
@@ -90,13 +101,14 @@ div.scroller {
         @media @tablet {
             div.panel {
                 display: none;
-            }
-            div.panel.shown {
                 margin: 0;
                 max-width: none;
                 width: 100%;
-                display: block;
                 border-style: none;
+                border-radius: 0;
+            }
+            div.panel.shown {
+                display: block;
             }
         }
     }

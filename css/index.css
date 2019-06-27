@@ -473,11 +473,19 @@ div.scroller div.scroll-nav {
     text-align: center;
     font-size: 4rem;
     width: 20%;
+    -moz-user-select: none;
+    user-select: none;
   }
   div.scroller div.scroll-nav div.left-button:hover,
   div.scroller div.scroll-nav div.right-button:hover {
     cursor: pointer;
     background-color: #03FF76;
+  }
+  div.scroller div.scroll-nav div.left-button {
+    border-right: 2px solid #2D2D2D;
+  }
+  div.scroller div.scroll-nav div.right-button {
+    border-left: 2px solid #2D2D2D;
   }
   div.scroller div.scroll-nav div.spot {
     width: 12px;
@@ -502,6 +510,7 @@ div.scroller div.display-area {
 div.scroller div.display-area div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
+  border-radius: 8px;
   max-width: 300px;
   margin: 10px;
   padding: 1rem;
@@ -519,12 +528,13 @@ div.scroller div.display-area div.panel p {
 @media (max-width: 1000px) {
   div.scroller div.display-area div.panel {
     display: none;
-  }
-  div.scroller div.display-area div.panel.shown {
     margin: 0;
     max-width: none;
     width: 100%;
-    display: block;
     border-style: none;
+    border-radius: 0;
+  }
+  div.scroller div.display-area div.panel.shown {
+    display: block;
   }
 }
