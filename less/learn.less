@@ -1,4 +1,6 @@
 // Learn Marketing Page
+@mobile = 500px;
+
 
 .learn-top {
 
@@ -17,6 +19,10 @@
   width: 880px;
   margin: 0 auto;
 
+  @media @mobile {
+    width: 100vw;
+  }
+
   h2 {
     font-size: 7.0rem;
     text-align: center;
@@ -28,15 +34,20 @@
 .learn-bottom .learn-benefits .cards-container-1 {
   display: flex;
   justify-content: space-around;
-  // padding: 0 50px;
-  // margin: 10px;
+
+  @media @mobile {
+    flex-direction: column;
+  }
 
   .card {
-    height: 250px;
     width: 50%;
     text-align: justify;
     padding: 18px;
-    margin: 20px 50px;
+    margin: 0 40px;
+
+    @media @mobile {
+      margin: 0 auto;
+    }
 
     h4 {
       font-size: 3.0rem;
@@ -63,11 +74,10 @@
   justify-content: space-around;
 
   .card {
-    height: 250px;
     width: 50%;
     text-align: justify;
     padding: 18px;
-    margin: 0 50px;
+    margin: 0 40px;
 
     h4 {
       font-size: 3.0rem;
