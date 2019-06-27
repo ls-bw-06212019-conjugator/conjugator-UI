@@ -71,6 +71,13 @@
       border-radius:5px;
       border: 2px solid @blue;
       margin:40px;
+       
+      .paragraphtext {
+        display: none;
+      }
+      .paragraphtext.paragraphtext-open {
+        display: block;
+      }
   
       h3 {
         font-size: 2rem;
@@ -80,7 +87,7 @@
         border-radius: 5px;
         background-color:@green;
         justify-content: center;
-        display:flex;
+        
       }
   
       p {
@@ -107,4 +114,9 @@
             overflow: hidden;
             position: absolute;
       }}
+      
+  }
+  .expandButton {
+    border: 1px solid, darkslategray;
+    border-radius: 5px;
   }

@@ -307,6 +307,12 @@ header nav a {
   border: 2px solid #63BAFF;
   margin: 40px;
 }
+.bottomabout .feature .paragraphtext {
+  display: none;
+}
+.bottomabout .feature .paragraphtext.paragraphtext-open {
+  display: block;
+}
 .bottomabout .feature h3 {
   font-size: 2rem;
   color: white;
@@ -315,7 +321,6 @@ header nav a {
   border-radius: 5px;
   background-color: #05FFB8;
   justify-content: center;
-  display: flex;
 }
 .bottomabout .feature p {
   font-size: 1.6rem;
@@ -338,4 +343,8 @@ header nav a {
     overflow: hidden;
     position: absolute;
   }
+}
+.expandButton {
+  border: 1px solid, darkslategray;
+  border-radius: 5px;
 }
