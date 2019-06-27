@@ -295,6 +295,15 @@ div.shaded {
   padding-bottom: 10px;
   color: #2D2D2D;
 }
+.learn-bottom .learn-tenses .accordion-container .accordion-panels .active-panel h4:hover {
+  color: #05FFB8;
+}
+.learn-bottom .learn-tenses .accordion-container .accordion-panels .panel .tense-header h4 {
+  font-size: 1.8rem;
+}
+.learn-bottom .learn-tenses .accordion-container .accordion-panels .panel .tense-description p {
+  font-size: 1.6rem;
+}
 /* About Marketing page */
 .abouttop {
   position: relative;
