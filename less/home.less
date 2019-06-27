@@ -9,7 +9,7 @@ div.shaded {
 
 div.container {
   margin: 0 auto;
-  padding: 3rem 0;
+  // padding: 3rem 0;
   max-width: @max-horizontal;
   display: flex;
   justify-content: space-around;
@@ -24,12 +24,14 @@ div.container {
     padding: 1rem;
     margin: 2rem;
     text-align: center;
+    min-width: @mobile-size;
 
     @media @mobile {
       width: 100%;
       border-right-style: none;
       border-left-style: none;
       margin: 0;
+      min-width: none;
 
       h2, h3 {margin: 1rem 0;}
     }

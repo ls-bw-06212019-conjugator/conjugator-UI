@@ -192,7 +192,6 @@ div.shaded {
 }
 div.container {
   margin: 0 auto;
-  padding: 3rem 0;
   max-width: 1200px;
   display: flex;
   justify-content: space-around;
@@ -207,6 +206,7 @@ div.container div.panel {
   padding: 1rem;
   margin: 2rem;
   text-align: center;
+  min-width: 500px;
 }
 @media (max-width: 500px) {
   div.container div.panel {
@@ -214,6 +214,7 @@ div.container div.panel {
     border-right-style: none;
     border-left-style: none;
     margin: 0;
+    min-width: none;
   }
   div.container div.panel h2,
   div.container div.panel h3 {
