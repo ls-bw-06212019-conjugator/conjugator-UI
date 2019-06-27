@@ -1,3 +1,12 @@
+.button-default {
+  background-color: #05FFB8;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.button-hover {
+  background-color: #03FF76;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -222,13 +231,13 @@ div.shaded {
 }
 .top div.container a {
   background-color: #05FFB8;
+  text-align: center;
+  text-decoration: none;
+  color: white;
   padding: 1.5rem;
   margin: 2rem;
   border: 2px solid #2D2D2D;
   font-size: 3.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: #2D2D2D;
   min-width: 4rem;
 }
 .top div.container a:hover {
