@@ -130,6 +130,7 @@
     .panel {
       display: none;
       width: 75%;
+      overflow: hidden;
 
       .tense-header {
         font-size: 1.8rem;
@@ -145,18 +146,25 @@
     .active-panel {
       display: flex;
       flex-direction: column;
-      border: 2px solid black;
+      border: 2px solid grey;
     }
   }
 
   .panel-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 480px;
     border: 2px solid black;
+    width: 75%;
+    margin: 10px 110px;
 
     .panel-link {
       border: 2px solid gold;
-      height: 30px;
       font-size: 1.8rem;
       cursor: pointer;
+      height: 40px;
+      text-align: center;
     }
   }
 }

@@ -312,6 +312,7 @@ div.shaded {
 .learn-bottom .learn-tenses .accordion-container .panel-cards .panel {
   display: none;
   width: 75%;
+  overflow: hidden;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-cards .panel .tense-header {
   font-size: 1.8rem;
@@ -324,16 +325,23 @@ div.shaded {
 .learn-bottom .learn-tenses .accordion-container .panel-cards .active-panel {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  border: 2px solid grey;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
   border: 2px solid black;
+  width: 75%;
+  margin: 10px 110px;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .panel-link {
   border: 2px solid gold;
-  height: 30px;
   font-size: 1.8rem;
   cursor: pointer;
+  height: 40px;
+  text-align: center;
 }
 /* About Marketing page */
 .abouttop {
