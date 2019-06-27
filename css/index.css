@@ -134,15 +134,27 @@ a {
   text-decoration: none;
 }
 header {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 10px 0;
+  background-color: white;
+}
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header h1 {
   font-size: 3.6rem;
   color: #63BAFF;
+  padding: 15px;
 }
 header nav {
   display: flex;
@@ -153,6 +165,12 @@ header nav {
 header nav a {
   font-size: 1.6rem;
   color: #63BAFF;
+  padding: 15px;
+}
+header.full-size {
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 /* Home Marketing page */
 div.shaded {
