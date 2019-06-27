@@ -184,26 +184,28 @@ header.full-size {
   margin: 0;
 }
 /* Home Marketing page */
-div.shaded {
-  background-color: #63BAFF;
-  height: auto;
-  min-height: 100vh;
-  overflow: auto;
+/* Home Marketing page */
+.expander {
+  display: flex;
+  flex-direction: column;
 }
-.background {
-  background-image: url('../assets/texture-yellow-wall.jpg');
-  background-position: center bottom;
+.bar {
+  background-color: #b1ddff;
+  padding: 30px 0;
 }
-div.container {
+div.focus {
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
 }
-div.container div.panel {
+@media (max-width: 1000px) {
+  div.focus {
+    flex-direction: column;
+  }
+}
+div.focus div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
   border-radius: 8px;
@@ -214,7 +216,7 @@ div.container div.panel {
   box-sizing: border-box;
 }
 @media (max-width: 500px) {
-  div.container div.panel {
+  div.focus div.panel {
     width: 100%;
     border-right-style: none;
     border-left-style: none;
@@ -222,20 +224,20 @@ div.container div.panel {
     margin: 0;
     min-width: initial;
   }
-  div.container div.panel h2,
-  div.container div.panel h3 {
+  div.focus div.panel h2,
+  div.focus div.panel h3 {
     margin: 1rem 0;
   }
 }
-div.container div.panel h2 {
+div.focus div.panel h2 {
   font-size: 4rem;
   margin: 1rem;
 }
-div.container div.panel h3 {
+div.focus div.panel h3 {
   font-size: 3rem;
   margin: 1rem;
 }
-div.container a {
+div.focus a {
   background-color: #05FFB8;
   text-align: center;
   text-decoration: none;
@@ -247,9 +249,17 @@ div.container a {
   font-size: 3.5rem;
   min-width: 4rem;
 }
-div.container a:hover {
+div.focus a:hover {
   background-color: #03FF76;
   cursor: pointer;
+}
+header {
+  border-bottom: 1px solid #63BAFF;
+}
+@media (max-width: 500px) {
+  header {
+    border-style: none;
+  }
 }
 @mobile = 500px;
 .learn-top .learn-header-image {
