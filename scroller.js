@@ -1,5 +1,3 @@
-console.log('hello world')
-
 class Scroller {
     constructor(element) {
         this.element = element;
@@ -18,7 +16,6 @@ class Scroller {
 
     goRight() {
         const currentNum = Number(this.chosen)
-        console.log('trying to increment from', currentNum)
         if (currentNum >= Object.keys(this.panelElements).length) {
             this.chosen = '1'
         } else {
