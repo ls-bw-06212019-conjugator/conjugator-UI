@@ -298,20 +298,25 @@ div.shaded {
   padding-bottom: 10px;
   color: #2D2D2D;
 }
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text p {
+  font-size: 1.6rem;
+  color: #686868;
+}
 .learn-bottom .learn-tenses .accordion-container {
   border: 2px solid blue;
   width: 100%;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links {
+  width: inherit;
   display: flex;
   flex-direction: column;
   border: 2px solid black;
-  margin: 0 110px;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .panel-link {
   cursor: pointer;
-  font-size: 1.8rem;
-  margin: 16px 0;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 20px 0;
   text-align: center;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .panel-link:hover {
@@ -325,8 +330,8 @@ div.shaded {
   line-height: 1.2;
   padding: 20px;
 }
-.learn-bottom .learn-tenses .accordion-container .panel-links .panel .tense-description {
-  font-size: 1.6rem;
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel p {
+  padding-bottom: 10px;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links .active-panel {
   display: flex;
