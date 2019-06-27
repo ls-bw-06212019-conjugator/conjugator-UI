@@ -6,6 +6,7 @@
 }
 .button-hover {
   background-color: #03FF76;
+  cursor: pointer;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -242,6 +243,7 @@ div.shaded {
 }
 .top div.container a:hover {
   background-color: #03FF76;
+  cursor: pointer;
 }
 .learn-top .learn-header-image {
   overflow: hidden;
@@ -478,8 +480,9 @@ div.scroller div.scroll-nav {
   div.scroller div.scroll-nav div.left-button,
   div.scroller div.scroll-nav div.right-button {
     background-color: #05FFB8;
-    color: white;
     text-align: center;
+    text-decoration: none;
+    color: white;
     font-size: 4rem;
     width: 20%;
     -moz-user-select: none;
@@ -487,8 +490,8 @@ div.scroller div.scroll-nav {
   }
   div.scroller div.scroll-nav div.left-button:hover,
   div.scroller div.scroll-nav div.right-button:hover {
-    cursor: pointer;
     background-color: #03FF76;
+    cursor: pointer;
   }
   div.scroller div.scroll-nav div.left-button {
     border-right: 2px solid #2D2D2D;
