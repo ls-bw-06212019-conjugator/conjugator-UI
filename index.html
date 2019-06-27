@@ -15,42 +15,57 @@
 
 <body>
 
-    <header>
-        <a href='#'><h1>Conjugator</h1></a>
-        <nav>
-          <a href='about.html'>About</a>
-          <a href='contact.html'>Contact</a>
-          <a href='learn.html'>Learn</a>
-          <a href='#'>Log In</a>
-        </nav>
-    </header>
 
-    <div class='top'>
-        <div class='header-image'>
-            <img src="assets/flag.jpg">
+    <script defer="defer" src="./scroller.js"></script>
+
+    <div class='shaded'>
+
+        <header class='full-size'>
+            <a href='#'>
+                <h1>Conjugator</h1>
+            </a>
+            <nav>
+                <a href='about.html'>About</a>
+                <a href='#'>Contact</a>
+                <a href='learn.html'>Learn</a>
+                <a href='#'>Log In</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="panel">
+                <h2>Conjugate to your heart's content.</h2>
+                <h3>Quiz yourself on Spanish verb conjugation.</h3>
+            </div>
+            <a href="#">Log In</a>
         </div>
-        <div class='header-button'>
-            <h2>Conjugate<br>to your heart's content</h2>
-            <button>Log In</button>
+
+        <div class='scroller'>
+            <div class='scroll-nav'>
+                <div class='left-button'>&lt;</div>
+                <div class='spot shown' data-panel-id='1'></div>
+                <div class='spot' data-panel-id='2'></div>
+                <div class='spot' data-panel-id='3'></div>
+                <div class='right-button'>></div>
+            </div>
+            <div class='display-area'>
+                <div class='panel shown' data-panel-id='1'>
+                    <h3>At your fingertips</h3>
+                    <p>Drill and repetition make conjugation second nature</p>
+                </div>
+                <div class='panel' data-panel-id='2'>
+                    <h3>Over 6,000 verbs</h3>
+                    <p>12 tenses to practice with, from simple present to subjunctive imperfect, i.e. from yo hablo to
+                        yo
+                        hablara</p>
+                </div>
+                <div class='panel' data-panel-id='3'>
+                    <h3>Immediate feedback</h3>
+                    <p>Learn from your mistakes.</p>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class='bottom'>
-        <div class='feature'>
-            <h3>At your fingertips</h3>
-            <p>Drill and repetition make conjugation second nature</p>
-        </div>
-        <div class='feature'>
-            <h3>Over 6,000 verbs</h3>
-            <p>12 tenses to practice with, from simple present to subjunctive imperfect, i.e. from yo hablo to yo hablara</p>
-        </div>
-        <div class='feature'>
-            <h3>Immediate feedback</h3>
-            <p>Learn from your mistakes.</p>
-        </div>
-    </div>
-
-    <footer>The Rat The Cat The Dog Bit Chased Escaped.</footer>
 
 </body>
 

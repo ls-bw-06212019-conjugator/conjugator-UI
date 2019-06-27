@@ -1,0 +1,112 @@
+div.scroller {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: @max-horizontal;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media @tablet {
+        border: 2px solid @black;
+        max-width: @mobile-size;
+
+        @media @mobile {
+            border-left-style: none;
+            border-right-style: none;
+            border-radius: 0;
+        }
+    }
+
+    div.scroll-nav {
+        display: none;
+
+        @media @tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            border-bottom: 2px solid @black;
+            background-color: grey;
+
+            div.left-button, div.right-button {
+                .button-default();
+                font-size: 4rem;
+                width: 20%;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            
+            div.left-button:hover, div.right-button:hover {
+                .button-hover();
+            }
+
+            div.left-button {
+                border-right: 2px solid @black;
+            }
+
+            div.right-button {
+                border-left: 2px solid @black;
+            }
+
+            div.spot {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: @black;
+            }
+
+            div.spot.shown {
+                background-color: white;
+            }
+
+            @media @mobile {
+                margin: 0;
+                min-width: 0;
+            }
+        }
+    }
+
+    div.display-area {
+        display: flex;
+        justify-content: space-evenly;
+
+        div.panel {
+            background-color: white;
+            border: 2px solid @black;
+            border-radius: 8px;
+            max-width: 300px;
+            margin: 10px;
+            padding: 1rem;
+            box-sizing: border-box;
+            text-align: center;
+
+            h3 {
+                font-size: 3rem;
+                margin: 1rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                margin: 1rem;
+            }
+        }
+
+        @media @tablet {
+            div.panel {
+                display: none;
+                margin: 0;
+                max-width: none;
+                width: 100%;
+                border-style: none;
+                border-radius: 0;
+            }
+            div.panel.shown {
+                display: block;
+            }
+        }
+    }
+}

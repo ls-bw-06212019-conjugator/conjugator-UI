@@ -3,52 +3,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Conjugator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <title>Conjugator</title>
+
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+  <script defer="defer" src="./accordion.js"></script>
+
   <header>
-      <a href='index.html'><h1>Conjugator</h1></a>
-      <nav>
-        <a href='#'>About</a>
-        <a href='#'>Contact</a>
-        <a href='#'>Learn</a>
-        <a href='#'>Log In</a>
-      </nav>
+    <a href='index.html'><h1>Conjugator</h1></a>
+    <nav>
+      <a href='about.html'>About</a>
+      <a href='#'>Contact</a>
+      <a href='learn.html'>Learn</a>
+      <a href='#'>Log In</a>
+    </nav>
   </header>
 
   <div class='learn-top'>
-      <div class='learn-header-image'>
-          <img src="assets/learn.jpg">
-      </div>
-      <div class='learn-header-button'>
-          <h2>Conjugate<br>to your heart's content</h2>
-          <button>Log In</button>
-      </div>
+    <div class='learn-header-image'>
+      <img src="assets/learn.jpg">
+    </div>
   </div>
 
   <div class='learn-bottom'>
-      <div class='learn-feature'>
-          <h3>At your fingertips</h3>
-          <p>Drill and repetition make conjugation second nature</p>
+    <h2>Learn!</h2>
+
+    <div class='learn-benefits'>
+
+      <div class="cards-container-1">
+
+        <div class="card">
+          <h4>Advance your career</h4>
+          <p>Language skills are among the top eight skills required of all occupations—no matter your sector or skill level—and the demand for bilingual professionals is rising exponentially. In fact, between 2010 and 2015, the number of U.S. job postings specifically geared toward bilingual candidates more than doubled.</p>
+        </div>
+
+        <div class="card">
+          <h4>Feed your brain</h4>
+          <p>People who speak more than one language switch between competing tasks and monitor changes in their environment more easily than monolinguals, as well as display signs of greater creativity and flexibility. If that weren’t enough, as we age, being bilingual or multilingual also helps to stave off mental aging and cognitive decline.</p>
+        </div>
+
       </div>
-      <div class='learn-feature'>
-          <h3>Over 6,000 verbs</h3>
-          <p>12 tenses to practice with, from simple present to subjunctive imperfect, i.e. from yo hablo to yo hablara</p>
+
+      <div class='learn-cards-image'>
+        <img src='assets/town.jpg'>
       </div>
-      <div class='learn-feature'>
-          <h3>Immediate feedback</h3>
-          <p>Learn from your mistakes.</p>
+
+      <div class='cards-container-2'>
+
+        <div class="card">
+          <h4>Cultural richness</h4>
+          <p>Being able to communicate in another language fosters an appreciation for the culture of that language. Greater understanding, in turn, promotes greater tolerance, empathy, and acceptance of others—with studies showing that children who have studied another language are more open toward and express more positive attitudes toward the culture associated with that language.</p>
+        </div>
+
+        <div class="card">
+          <h4>Go to the source</h4>
+          <p>In a world of more than 6,000 spoken languages, we sometimes require translation, but speaking at least one additional language empowers us to access information that would otherwise be off-limits. For example, individuals proficient in other languages are able to navigate the Internet as genuine global citizens—consuming and assessing foreign media and entertainment.</p>
+        </div>
+
       </div>
+
+      <a href='https://www.leadwithlanguages.org/why-learn-languages/top-ten-reasons-to-learn-languages/'><p>Source: Why Learn Languages</p></a>
+    </div>
+
+    <div class='learn-tenses'>
+      <div class='h3-intro'>
+        <div class='learn-h3-image'>
+          <img src='assets/piano.jpg' alt='Practicing piano'>
+        </div>
+        <div class='learn-h3-text'>
+          <h3>Learn 12 different verb tenses with Conjugator</h3>
+          <p>To fully benefit from practice drills, you should be familiar with each of these 12 verb tenses!</p>
+        </div>
+      </div>
+
+      <div class='accordion-container'>
+
+        <!-- ACCORDION COMPONENTS -->
+
+        <div class="panel-links">
+          <div class="panel-link active-panel-link" data-tense='present'>1. Present</div>
+          <div class='panel active-panel' data-tense='present'>
+            <p>Used for ongoing or habitually performed actions, or a state that currently or generally exists.</p>
+            <p>Example: I eat tacos every weekend.</p>
+            <p>Ejemplo: Como tacos cada fin de semana.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='preterite'>2. Preterite</div>
+          <div class='panel' data-tense='preterite'>
+            <p>Used for talking about events that took place or were completed in the past</p>
+            <p>Example: I bought a new car last week.</p>
+            <p>Ejemplo: Compré un carro nuevo la semana pasada.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='imperfect'>3. Imperfect</div>
+          <div class='panel' data-tense='imperfect'>
+            <p>Use for talking about past habitual actions, or what someone was doing in the past when they were interrupted by something else</p>
+            <p>Example: I was talking to Maria on the phone when a dog bit me!</p>
+            <p>Ejemplo: Estaba hablando con Maria por teléfono cuando me mordió un perro.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='future'>4. Future</div>
+          <div class='panel' data-tense='future'>
+            <p>Used for talking about what will happen</p>
+            <p>Example: You will play for the national team.</p>
+            <p>Ejemplo: Jugarás para el equipo nacional.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='conditional'>5. Conditional</div>
+          <div class='panel' data-tense='conditional'>
+            <p>Used for talking about hypothetical situations and probabilities and to make polite requests</p>
+            <p>Example: If I were rich, I would travel all over the world.</p>
+            <p>Ejemplo: Si fuera rico, viajaría por todo el mundo.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='present-perfect'>6. Present Perfect</div>
+          <div class='panel' data-tense='present-perfect'>
+            <p>Used for talking about things that started in the past and which continue or repeat in the present, or things that have happened in the recent past</p>
+            <p>Example: I have seen the mountains of Peru.</p>
+            <p>Ejemplo: He visto las montañas de Perú.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='future-perfect'>7. Future Perfect</div>
+          <div class='panel' data-tense='future-perfect'>
+            <p>Used for talking about things that will have happened after a certain point</p>
+            <p>Example: I will have seen the mountains of Peru after I go to Machu Picchu</p>
+            <p>Ejemplo: Habré visto las montañas de Perú después de ir a Machu Picchu.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='past-perfect'>8. Past Perfect</div>
+          <div class='panel' data-tense='past-perfect'>
+            <p>Used to talk about a past action that happened prior to another action in the past</p>
+            <p>Example: We had sat down when the train left.</p>
+            <p>Ejemplo: Nos habíamos sentado cuando el tren salió.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='conditional-perfect'>9. Conditional Perfect</div>
+          <div class='panel' data-tense='conditional-perfect'>
+            <p>Used for talking about an action in the past that would have happened but did not due to some other event, or to express the probability of an action that has already been completed</p>
+            <p>Example: He would have finished the book, but the telephone rang.</p>
+            <p>Ejemplo: Él habría leído el libro, pero el teléfono soñó.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='subjunctive-present'>10. Subjunctive Present</div>
+          <div class='panel' data-tense='subjunctive-present'>
+            <p>Used for talking about situations of doubt, desire, emotion, necessity, or uncertainty</p>
+            <p>Example: I hope you have a good day.</p>
+            <p>Ejemplo: Espero que tú tengas un buen día.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='subjunctive-imperfect'>11. Subjunctive Imperfect</div>
+          <div class='panel' data-tense='subjunctive-imperfect'>
+            <p>Usually used for talking about a previous experience, but can also refer to unlikely events or possibilities</p>
+            <p>Example: If I were you, I would do it.</p>
+            <p>Ejemplo: Si yo fuera tú, no lo haría.</p>
+          </div>
+        </div>
+
+        <div class="panel-links">
+          <div class="panel-link" data-tense='subjunctive-present-perfect'>12. Subjunctive Present Perfect</div>
+          <div class='panel' data-tense='subjunctive-present-perfect'>
+            <p>Used for talking about past actions that are connected to the present, as well as actions that will have happened by a certain point in the future</p>
+            <p>Example sentence in English: It's possible that you will have returned by March.</p>
+            <p>Example sentence in Spanish: Es posible que ustedes hayan vuelto para marzo.</p>
+          </div>
+        </div>
+
+        <a href='https://www.spanishdict.com/guide'><p>Source: Spanish Dict</p></a>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 
 
 </body>
