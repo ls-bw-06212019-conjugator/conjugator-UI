@@ -155,7 +155,7 @@ header nav a {
   color: #63BAFF;
 }
 /* Home Marketing page */
-body {
+div.shaded {
   background-color: #63BAFF;
 }
 .top {
@@ -206,7 +206,7 @@ body {
   min-width: 4rem;
 }
 .top div.container a:hover {
-  background-color: #9effe3;
+  background-color: #03FF76;
 }
 .learn-top .learn-header-image {
   overflow: hidden;
