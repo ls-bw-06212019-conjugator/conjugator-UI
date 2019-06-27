@@ -1,25 +1,33 @@
 /* About Marketing page */
-.top {
+.abouttop {
     position: relative;
+    padding: 0;
   
     .aboutheader-image {
   
   
       .aboutimage {
-        max-width: 98%;
-        max-height: 20%;
         margin: 1%;
         padding-bottom: 0px;
         margin-bottom: 0px;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 400px;
+        
+        img {
+          width: 100%;
+    
 
       }
     }
   
-    
+  } 
+}
     .header-button {
       height: 100px;
       width: 100px;
       margin: 20px;
+      margin-bottom: 0px;
   
       h2 {
         top: 30px;
@@ -32,13 +40,41 @@
         padding: 12px;
         border-radius: 7px;
         border: 0px;
+
+        
         
         
       }
   
      
     }
+  
+  .brief {
+   
+       
+    h3 {
+        font-size: 3rem;
+        color: white;
+        border: 1px solid @green;
+        border-radius: 5px;
+        background-color:@green;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+        justify-content: center;
+        display:flex;
+        padding: 10px;
+        
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: @black;
+      margin:20px;
+      padding-top: 10px;
+
   }
+}
   
   .bottom-about {
     display: flex;
@@ -58,21 +94,22 @@
   
       h3 {
         font-size: 2rem;
-        color: white;
+        color:white;
         padding: 12px;
         border: 1px solid @green;
         border-radius: 5px;
-        background-color: @green;
+        background-color:@green;
         justify-content: center;
         display:flex;
-        
+       
       }
   
       p {
         font-size: 1.6rem;
-        color: @black;
-        padding: 3px;
+        color: darkgrey;
+        padding: 12px;
         padding-top: 10px;
       }
     }
   }
+

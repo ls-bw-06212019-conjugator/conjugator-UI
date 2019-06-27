@@ -16,6 +16,8 @@
 
 <body>
 
+  <script defer="defer" src="./accordion.js"></script>
+
   <header>
     <a href='index.html'><h1>Conjugator</h1></a>
     <nav>
@@ -36,19 +38,9 @@
     <h2>Learn!</h2>
 
     <div class='learn-benefits'>
-      <!-- <div class='h3-intro'>
-        <div class='learn-h3-image'>
-          <img src="assets/learn-dancing.jpg" alt='Women dancing in traditional dress'>
-        </div>
-        <div class='learn-h3-text'>
-          <h3>Benefits of learning a foreign language</h3>
-          <p>There are so many benefits of learning a foreign language. Take a look!</p>
-        </div>
-      </div> -->
 
       <div class="cards-container-1">
 
-        <!-- CARD COMPONENTS -->
         <div class="card">
           <h4>Advance your career</h4>
           <p>Language skills are among the top eight skills required of all occupations—no matter your sector or skill level—and the demand for bilingual professionals is rising exponentially. In fact, between 2010 and 2015, the number of U.S. job postings specifically geared toward bilingual candidates more than doubled.</p>
@@ -68,7 +60,7 @@
       <div class='cards-container-2'>
 
         <div class="card">
-          <h4>Cultural Richness</h4>
+          <h4>Cultural richness</h4>
           <p>Being able to communicate in another language fosters an appreciation for the culture of that language. Greater understanding, in turn, promotes greater tolerance, empathy, and acceptance of others—with studies showing that children who have studied another language are more open toward and express more positive attitudes toward the culture associated with that language.</p>
         </div>
 
@@ -93,83 +85,182 @@
       </div>
 
       <div class='accordion-container'>
-        <h3>Verb Tenses</h3>
 
         <!-- ACCORDION COMPONENTS -->
-        <div class='tab active-tab' data-tab='present'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+
+        <div class="panel-links">
+          <div class="panel-link active-panel-link" data-tense='present'>Present</div>
+          <div class='panel active-panel' data-tense='present'>
+            <div class='tense-header'>
+              <h4>Present</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='preterite'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='preterite'>Preterite</div>
+          <div class='panel' data-tense='preterite'>
+            <div class='tense-header'>
+              <h4>Preterite</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='imperfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='imperfect'>Imperfect</div>
+          <div class='panel' data-tense='imperfect'>
+            <div class='tense-header'>
+              <h4>Imperfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='future'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='future'>Future</div>
+          <div class='panel' data-tense='future'>
+            <div class='tense-header'>
+              <h4>Future</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='conditional'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='conditional'>Conditional</div>
+          <div class='panel' data-tense='conditional'>
+            <div class='tense-header'>
+              <h4>Conditional</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='present-perfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='present-perfect'>Present Perfect</div>
+          <div class='panel' data-tense='present-perfect'>
+            <div class='tense-header'>
+              <h4>Present Perfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='future-perfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='future-perfect'>Future Perfect</div>
+          <div class='panel' data-tense='future-perfect'>
+            <div class='tense-header'>
+              <h4>Future Perfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='past-perfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='past-perfect'>Past Perfect</div>
+          <div class='panel' data-tense='past-perfect'>
+            <div class='tense-header'>
+              <h4>Past Perfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='conditional-perfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='conditional-perfect'>Conditional Perfect</div>
+          <div class='panel' data-tense='conditional-perfect'>
+            <div class='tense-header'>
+              <h4>Conditional Perfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='subjunctive-present'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='subjunctive-present'>Subjunctive Present</div>
+          <div class='panel' data-tense='subjunctive-present'>
+            <div class='tense-header'>
+              <h4>Subjunctive Present</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='subjunctive-imperfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='subjunctive-imperfect'>Subjunctive Imperfect</div>
+          <div class='panel' data-tense='subjunctive-imperfect'>
+            <div class='tense-header'>
+              <h4>Subjunctive Imperfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
         </div>
 
-        <div class='tab' data-tab='subjunctive-present-perfect'>
-          <div class='tense-type'></div>
-          <div class='tense-description'></div>
+        <div class="panel-links">
+          <div class="panel-link" data-tense='subjunctive-present-perfect'>Subjunctive Present Perfect</div>
+          <div class='panel' data-tense='subjunctive-present-perfect'>
+            <div class='tense-header'>
+              <h4>Subjunctive Present Perfect</h4>
+            </div>
+            <div class='tense-description'>
+              <p>Explanation of the tense</p>
+              <p>Example sentence in English:</p>
+              <p>Example sentence in Spanish:</p>
+            </div>
+          </div>
+        </div>
+
         </div>
 
       </div>
 
     </div>
-
-    <!-- <div class='learn-keyboard'>
-      <div class='learn-keyboard-1'>
-        <h3>Keyboard Shortcuts</h3>
-        <p> Keyboard shortcuts make it possible for you to type Spanish characters such as accents and tildes on an American keyboard.</p>
-      </div>
-      <div class='learn-keyboard-2'>
-      </div>
-      <div class='learn-keyboard-3'>
-      </div>
-    </div> -->
 
   </div>
 
