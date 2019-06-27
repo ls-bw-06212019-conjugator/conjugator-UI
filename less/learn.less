@@ -120,27 +120,22 @@
   width: 100%;
   border: 2px solid blue;
 
-  .panel-cards {
-    width: 100%;
-    height: 300px;
-    padding-top: 60px;
-    diplay: flex;
-    flex-direction: column;
+  .panel-links {
+    width: 75%;
+    border: 2px solid black;
+    height: 50px;
+
+    .panel-link {
+      cursor: pointer;
+    }
+
+    .active-panel-link:hover {
+      color: @green;
+    }
 
     .panel {
       display: none;
-      width: 75%;
       overflow: hidden;
-
-      .tense-header {
-        font-size: 1.8rem;
-        padding-bottom: 10px;
-      }
-
-      .tense-description {
-        font-size: 1.6rem;
-        line-height: 1.2;
-      }
     }
 
     .active-panel {
@@ -149,25 +144,61 @@
       border: 2px solid grey;
     }
   }
-
-  .panel-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 480px;
-    border: 2px solid black;
-    width: 75%;
-    margin: 10px 110px;
-
-    .panel-link {
-      border: 2px solid gold;
-      font-size: 1.8rem;
-      cursor: pointer;
-      height: 40px;
-      text-align: center;
-    }
-  }
 }
+
+
+// .learn-bottom .learn-tenses .accordion-container {
+//   width: 100%;
+//   border: 2px solid blue;
+//
+//   .panel-cards {
+//     width: 100%;
+//     height: 300px;
+//     padding-top: 60px;
+//     diplay: flex;
+//     flex-direction: column;
+//
+//     .panel {
+//       display: none;
+//       width: 75%;
+//       overflow: hidden;
+//
+//       .tense-header {
+//         font-size: 1.8rem;
+//         padding-bottom: 10px;
+//       }
+//
+//       .tense-description {
+//         font-size: 1.6rem;
+//         line-height: 1.2;
+//       }
+//     }
+//
+//     .active-panel {
+//       display: flex;
+//       flex-direction: column;
+//       border: 2px solid grey;
+//     }
+//   }
+//
+//   .panel-links {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 480px;
+//     border: 2px solid black;
+//     width: 75%;
+//     margin: 10px 110px;
+//
+//     .panel-link {
+//       border: 2px solid gold;
+//       font-size: 1.8rem;
+//       cursor: pointer;
+//       height: 40px;
+//       text-align: center;
+//     }
+//   }
+// }
 
 // .learn-bottom .learn-tenses .accordion-container .accordion-panels {
 //   .active-panel h4:hover {
