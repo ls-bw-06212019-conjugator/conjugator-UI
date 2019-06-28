@@ -37,7 +37,6 @@ class Scroller {
     }
 
     updateDOM() {
-        console.log('current selection:', this.chosen)
         Object.values(this.panelElements).forEach(div => div.classList.remove('shown'))
         Object.values(this.spotElements).forEach(div => div.classList.remove('shown'))
 
