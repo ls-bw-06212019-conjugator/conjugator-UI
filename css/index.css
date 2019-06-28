@@ -223,6 +223,7 @@ div.focus {
   align-items: center;
   overflow: hidden;
   box-sizing: border-box;
+
 }
 @media (max-width: 1000px) {
   div.focus {
@@ -286,16 +287,11 @@ div.focus a:hover {
   width: 100%;
 }
 .learn-bottom {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .learn-bottom {
-    width: 100vw;
-  }
-}
 .learn-bottom h2 {
-  font-size: 7rem;
+  font-size: 5rem;
   text-align: center;
   color: #05FFB8;
   padding: 30px 0;
@@ -307,17 +303,18 @@ div.focus a:hover {
 @media (max-width: 500px) {
   .learn-bottom .learn-benefits .cards-container-1 {
     flex-direction: column;
+    box-sizing: border-box;
   }
 }
 .learn-bottom .learn-benefits .cards-container-1 .card {
   width: 50%;
   text-align: justify;
-  padding: 18px;
-  margin: 0 40px;
+  padding: 20px;
 }
 @media (max-width: 500px) {
   .learn-bottom .learn-benefits .cards-container-1 .card {
     margin: 0 auto;
+    width: 80%;
   }
 }
 .learn-bottom .learn-benefits .cards-container-1 .card h4 {
@@ -339,11 +336,22 @@ div.focus a:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .learn-bottom .learn-benefits .cards-container-2 {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}
 .learn-bottom .learn-benefits .cards-container-2 .card {
   width: 50%;
   text-align: justify;
-  padding: 18px;
-  margin: 0 40px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .learn-bottom .learn-benefits .cards-container-2 .card {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 .learn-bottom .learn-benefits .cards-container-2 .card h4 {
   font-size: 3rem;
@@ -366,6 +374,14 @@ div.focus a:hover {
 .learn-bottom .learn-tenses .h3-intro .learn-h3-image {
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .learn-bottom .learn-tenses .h3-intro .learn-h3-image {
+    max-width: 100vw;
+  }
+  .learn-bottom .learn-tenses .h3-intro .learn-h3-image img {
+    width: 100%;
+  }
+}
 .learn-bottom .learn-tenses .h3-intro .learn-h3-text {
   margin: 10px auto;
   text-align: center;
@@ -380,7 +396,7 @@ div.focus a:hover {
   color: #686868;
 }
 .learn-bottom .learn-tenses .accordion-container {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 .learn-bottom .learn-tenses .accordion-container .panel-links {
@@ -416,71 +432,73 @@ div.focus a:hover {
   flex-direction: column;
 }
 /* About Marketing page */
-.abouttop {
+.aboutpage {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.aboutpage .abouttop {
   position: relative;
   padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
-.abouttop .aboutheader-image .aboutimage {
-  margin: 1%;
+.aboutpage .abouttop .aboutheader-image .aboutimage {
+  margin: 0%;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  overflow: hidden;
-  max-width: 100vw;
+  overflow-x: hidden;
+  max-width: 100%;
   max-height: 400px;
 }
-.abouttop .aboutheader-image .aboutimage img {
+.aboutpage .abouttop .aboutheader-image .aboutimage img {
   width: 100%;
 }
-.header-button {
-  height: 100px;
-  width: 100px;
-  margin: 20px;
-  margin-bottom: 0px;
-}
-.header-button h2 {
-  top: 30px;
-  font-size: 6vh;
+.aboutpage .brief h3 {
+  font-size: 50px;
   color: white;
-  position: absolute;
-  top: 37%;
-  left: 55%;
-  background-color: #63BAFF;
-  padding: 12px;
-  border-radius: 7px;
-  border: 0px;
-}
-.brief h3 {
-  font-size: 3rem;
-  color: white;
-  border: 1px solid #05FFB8;
+  border: 1px dashed white;
   border-radius: 5px;
-  background-color: #05FFB8;
+  background-color: #63BAFF;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 2%;
   justify-content: center;
   display: flex;
   padding: 10px;
+  box-shadow: 4px, 4px,;
 }
-.brief p {
+.aboutpage .brief p {
   font-size: 1.6rem;
-  color: #2D2D2D;
-  margin: 20px;
-  padding-top: 10px;
+  color: darkslategrey;
+  margin: 2%;
+  padding: 2%;
 }
-.bottom-about {
+.aboutpage .bottomabout {
   display: flex;
   align-content: top;
   justify-content: space-evenly;
   width: 100%;
 }
-.bottom-about .feature {
+.aboutpage .bottomabout .feature {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
-  border: 2px solid #05FFB8;
+  border: 2px solid #63BAFF;
   margin: 40px;
 }
-.bottom-about .feature h3 {
+.aboutpage .bottomabout .feature .fleximg {
+  width: 100%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.aboutpage .bottomabout .feature .paragraphtext {
+  display: none;
+}
+.aboutpage .bottomabout .feature .paragraphtext.paragraphtext-open {
+  display: block;
+}
+.aboutpage .bottomabout .feature h3 {
   font-size: 2rem;
   color: white;
   padding: 12px;
@@ -488,13 +506,99 @@ div.focus a:hover {
   border-radius: 5px;
   background-color: #05FFB8;
   justify-content: center;
-  display: flex;
 }
-.bottom-about .feature p {
+.aboutpage .bottomabout .feature p {
   font-size: 1.6rem;
-  color: darkgrey;
+  color: darkslategrey;
   padding: 12px;
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .aboutpage .bottomabout {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+  }
+  .aboutpage .logolink {
+    display: none;
+  }
+  .aboutpage .logolink .nav {
+    display: flex;
+    width: 20%;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+.aboutpage .expandButton {
+  font-size: 12px;
+  border: 2px solid darkslategrey;
+  padding: 2px;
+  margin: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+.contact-image {
+  height: 400px;
+  background-image: url('../assets/dance1.jpg');
+  background-position: center;
+}
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  color: #05FFB8;
+  padding: 30px 0;
+}
+.contact {
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .contact {
+    max-width: 100vw;
+    padding: 0 15px;
+  }
+}
+.contact .fill-in {
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
+.contact .fill-in .input {
+  display: flex;
+  flex-direction: column;
+}
+.contact .fill-in input[type=text],
+.contact .fill-in textarea {
+  width: 100%;
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.contact .fill-in input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact .fill-in input[type=submit]:hover {
+  background-color: #45a049;
+}
+.contact .fill-in .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 div.scroller {
   margin: 15px auto;
