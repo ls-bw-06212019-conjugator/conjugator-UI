@@ -1,3 +1,13 @@
+.button-default {
+  background-color: #05FFB8;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.button-hover {
+  background-color: #03FF76;
+  cursor: pointer;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -134,80 +144,142 @@ a {
   text-decoration: none;
 }
 header {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 10px 0;
+  background-color: white;
+}
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header h1 {
   font-size: 3.6rem;
   color: #63BAFF;
+  padding: 15px;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 400px;
+  max-width: 100vw;
 }
 header nav a {
   font-size: 1.6rem;
   color: #63BAFF;
+  padding: 15px;
 }
-/* Home Marketing page */
-div.shaded {
-  background-color: #63BAFF;
+header.full-size {
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
-.top {
-  background-color: #63BAFF;
+/* Marketing Page */
+.expander {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+  overflow-x: hidden;
 }
-.top div.container {
+.expander img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  min-height: 150px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+header.full-size {
+  border-bottom: 1px solid #63BAFF;
+}
+.bar,
+.top-bar {
+  background-color: #b1ddff;
+  padding: 18px 0;
+}
+@media (max-width: 1000px) {
+  header.full-size {
+    border-style: none;
+  }
+  .top-bar {
+    padding: 0;
+  }
+}
+div.focus {
   margin: 0 auto;
-  padding: 3rem 0;
   max-width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.top div.container div.panel {
+@media (max-width: 1000px) {
+  div.focus {
+    flex-direction: column;
+  }
+}
+div.focus div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
+  border-radius: 8px;
   padding: 1rem;
   margin: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
-@media (max-width: 500px) {
-  .top div.container div.panel {
+@media (max-width: 1000px) {
+  div.focus div.panel {
     width: 100%;
     border-right-style: none;
     border-left-style: none;
+    border-radius: 0;
     margin: 0;
+    min-width: initial;
+  }
+  div.focus div.panel h2,
+  div.focus div.panel h3 {
+    margin: 1rem 0;
   }
 }
-.top div.container div.panel h2 {
+div.focus div.panel h2 {
   font-size: 4rem;
+  color: black;
   margin: 1rem;
+  padding: 0 0 5px 0;
 }
-.top div.container div.panel h3 {
+div.focus div.panel h3 {
   font-size: 3rem;
+  color: black;
   margin: 1rem;
+  padding: 0;
 }
-.top div.container a {
+div.focus a {
   background-color: #05FFB8;
-  padding: 1.5rem;
-  margin: 2rem;
-  border: 2px solid #2D2D2D;
-  font-size: 3.5rem;
   text-align: center;
   text-decoration: none;
-  color: #2D2D2D;
+  color: white;
+  padding: 1.8rem;
+  margin: 2rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  font-size: 3.5rem;
   min-width: 4rem;
 }
-.top div.container a:hover {
+div.focus a:hover {
   background-color: #03FF76;
+  cursor: pointer;
 }
+@mobile = 500px;
 .learn-top .learn-header-image {
   overflow: hidden;
   max-width: 100vw;
@@ -217,11 +289,11 @@ div.shaded {
   width: 100%;
 }
 .learn-bottom {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
 .learn-bottom h2 {
-  font-size: 7rem;
+  font-size: 5rem;
   text-align: center;
   color: #05FFB8;
   padding: 30px 0;
@@ -230,12 +302,22 @@ div.shaded {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .learn-bottom .learn-benefits .cards-container-1 {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}
 .learn-bottom .learn-benefits .cards-container-1 .card {
-  height: 250px;
   width: 50%;
   text-align: justify;
-  padding: 18px;
-  margin: 20px 50px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .learn-bottom .learn-benefits .cards-container-1 .card {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 .learn-bottom .learn-benefits .cards-container-1 .card h4 {
   font-size: 3rem;
@@ -256,12 +338,22 @@ div.shaded {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .learn-bottom .learn-benefits .cards-container-2 {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}
 .learn-bottom .learn-benefits .cards-container-2 .card {
-  height: 250px;
   width: 50%;
   text-align: justify;
-  padding: 18px;
-  margin: 20px 50px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .learn-bottom .learn-benefits .cards-container-2 .card {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 .learn-bottom .learn-benefits .cards-container-2 .card h4 {
   font-size: 3rem;
@@ -273,117 +365,252 @@ div.shaded {
   color: #686868;
   line-height: 1.2;
 }
+.learn-bottom {
+  margin-bottom: 80px;
+}
 .learn-bottom .learn-tenses .h3-intro {
-  height: 150px;
-  width: 880px;
-  border: 2px solid #686868;
   display: flex;
-  margin-bottom: 30px;
+  flex-direction: column;
+  margin: 60px 0;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-image {
-  height: inherit;
-  width: 450px;
-  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100vw;
+}
+.learn-bottom .learn-tenses .h3-intro .learn-h3-image img {
+  width: 100%;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-text {
-  height: inherit;
-  width: 545px;
-  margin: 10px;
+  margin: 10px auto;
+  text-align: center;
 }
 .learn-bottom .learn-tenses .h3-intro .learn-h3-text h3 {
   font-size: 3rem;
   padding-bottom: 10px;
   color: #2D2D2D;
 }
+.learn-bottom .learn-tenses .h3-intro .learn-h3-text p {
+  font-size: 1.6rem;
+  color: #686868;
+}
+.learn-bottom .learn-tenses .accordion-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel-link {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 20px 0;
+  text-align: center;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel-link:hover {
+  color: #05FFB8;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 20px;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .panel p {
+  padding-bottom: 10px;
+  color: #686868;
+}
+.learn-bottom .learn-tenses .accordion-container .panel-links .active-panel {
+  display: flex;
+  flex-direction: column;
+}
 /* About Marketing page */
-.abouttop {
+.aboutpage {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.aboutpage .abouttop {
   position: relative;
   padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
-.abouttop .aboutheader-image .aboutimage {
-  margin: 1%;
+.aboutpage .abouttop .aboutheader-image .aboutimage {
+  margin: 0%;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  overflow: hidden;
-  max-width: 100vw;
+  overflow-x: hidden;
+  max-width: 100%;
   max-height: 400px;
 }
-.abouttop .aboutheader-image .aboutimage img {
+.aboutpage .abouttop .aboutheader-image .aboutimage img {
   width: 100%;
 }
-.header-button {
-  height: 100px;
-  width: 100px;
-  margin: 20px;
-  margin-bottom: 0px;
-}
-.header-button h2 {
-  top: 30px;
-  font-size: 6vh;
+.aboutpage .brief h3 {
+  font-size: 50px;
   color: white;
-  position: absolute;
-  top: 37%;
-  left: 55%;
-  background-color: #63BAFF;
-  padding: 12px;
-  border-radius: 7px;
-  border: 0px;
-}
-.brief h3 {
-  font-size: 3rem;
-  color: white;
-  border: 1px solid #05FFB8;
+  border: 1px dashed white;
   border-radius: 5px;
-  background-color: #05FFB8;
+  background-color: #63BAFF;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 2%;
   justify-content: center;
   display: flex;
   padding: 10px;
+  box-shadow: 4px, 4px,;
 }
-.brief p {
+.aboutpage .brief p {
   font-size: 1.6rem;
-  color: #2D2D2D;
-  margin: 20px;
-  padding-top: 10px;
+  color: darkslategrey;
+  margin: 2%;
+  padding: 2%;
 }
-.bottom-about {
+.aboutpage .bottomabout {
   display: flex;
   align-content: top;
   justify-content: space-evenly;
   width: 100%;
 }
-.bottom-about .feature {
+.aboutpage .bottomabout .feature {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
-  border: 2px solid #05FFB8;
+  border: 2px solid #63BAFF;
   margin: 40px;
 }
-.bottom-about .feature h3 {
-  font-size: 2rem;
-  color: white;
-  padding: 12px;
-  border: 1px solid #05FFB8;
-  border-radius: 5px;
-  background-color: #05FFB8;
-  justify-content: center;
-  display: flex;
+.aboutpage .bottomabout .feature .fleximg {
+  width: 100%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.bottom-about .feature p {
+.aboutpage .bottomabout .feature .paragraphtext {
+  display: none;
+}
+.aboutpage .bottomabout .feature .paragraphtext.paragraphtext-open {
+  display: block;
+}
+.aboutpage .bottomabout .feature h3 {
+  font-size: 2rem;
+  color: black;
+  padding: 12px;
+  border: 3px solid #63BAFF;
+  border-radius: 5px;
+  background-color: white;
+  justify-content: center;
+  display: block;
+  padding-left: 35%;
+}
+.aboutpage .bottomabout .feature p {
   font-size: 1.6rem;
-  color: darkgrey;
+  color: darkslategrey;
   padding: 12px;
   padding-top: 10px;
 }
-div.scroller {
+@media (max-width: 500px) {
+  .aboutpage .bottomabout {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+  }
+  .aboutpage .logolink {
+    display: none;
+  }
+  .aboutpage .logolink .nav {
+    display: flex;
+    width: 20%;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+.aboutpage .expandButton {
+  font-size: 12px;
+  background-color: #05FFB8;
+  color: white;
+  padding: 2px;
+  margin: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+.aboutpage .expandButton:hover {
+  background-color: blue;
+}
+.contact-image {
+  height: 400px;
+  background-image: url('../assets/dance1.jpg');
+  background-position: center;
+}
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  color: #05FFB8;
+  padding: 30px 0;
+}
+.contact {
+  max-width: 450px;
   margin: 0 auto;
+  margin-bottom: 80px;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .contact {
+    max-width: 100vw;
+    padding: 0 15px;
+  }
+}
+.contact .fill-in {
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+}
+.contact .fill-in .input {
+  display: flex;
+  flex-direction: column;
+}
+.contact .fill-in input[type=text],
+.contact .fill-in textarea {
+  width: 100%;
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.contact .fill-in input[type=submit] {
+  background-color: #05FFB8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.contact .fill-in input[type=submit]:hover {
+  background-color: #03FF76;
+}
+div.scroller {
+  margin: 15px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   max-width: 1200px;
   box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
   div.scroller {
@@ -395,6 +622,7 @@ div.scroller {
   div.scroller {
     border-left-style: none;
     border-right-style: none;
+    border-radius: 0;
   }
 }
 div.scroller div.scroll-nav {
@@ -402,31 +630,44 @@ div.scroller div.scroll-nav {
 }
 @media (max-width: 1000px) {
   div.scroller div.scroll-nav {
-    background-color: #05FFB8;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     width: 100%;
     border-bottom: 2px solid #2D2D2D;
+    background-color: grey;
   }
   div.scroller div.scroll-nav div.left-button,
   div.scroller div.scroll-nav div.right-button {
-    background-color: #2D2D2D;
-    color: white;
+    background-color: #05FFB8;
     text-align: center;
+    text-decoration: none;
+    color: white;
     font-size: 4rem;
     width: 20%;
+    -moz-user-select: none;
+    user-select: none;
   }
   div.scroller div.scroll-nav div.left-button:hover,
   div.scroller div.scroll-nav div.right-button:hover {
+    background-color: #03FF76;
     cursor: pointer;
   }
+  div.scroller div.scroll-nav div.left-button {
+    border-right: 2px solid #2D2D2D;
+  }
+  div.scroller div.scroll-nav div.right-button {
+    border-left: 2px solid #2D2D2D;
+  }
   div.scroller div.scroll-nav div.spot {
-    flex-grow: 1;
-    width: 20%;
-    background-color: #686868;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2D2D2D;
   }
   div.scroller div.scroll-nav div.spot.shown {
-    background-color: #05FFB8;
+    background-color: white;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
@@ -436,13 +677,13 @@ div.scroller div.scroll-nav {
   }
 }
 div.scroller div.display-area {
-  background-color: #63BAFF;
   display: flex;
   justify-content: space-evenly;
 }
 div.scroller div.display-area div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
+  border-radius: 8px;
   max-width: 300px;
   margin: 10px;
   padding: 1rem;
@@ -455,17 +696,19 @@ div.scroller div.display-area div.panel h3 {
 }
 div.scroller div.display-area div.panel p {
   font-size: 1.8rem;
+  line-height: 2rem;
   margin: 1rem;
 }
 @media (max-width: 1000px) {
   div.scroller div.display-area div.panel {
     display: none;
-  }
-  div.scroller div.display-area div.panel.shown {
     margin: 0;
     max-width: none;
     width: 100%;
-    display: block;
     border-style: none;
+    border-radius: 0;
+  }
+  div.scroller div.display-area div.panel.shown {
+    display: block;
   }
 }
