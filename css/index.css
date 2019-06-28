@@ -184,34 +184,63 @@ header.full-size {
   margin: 0;
 }
 /* Home Marketing page */
-div.shaded {
-  background-color: #63BAFF;
-  height: auto;
-  min-height: 100vh;
-  overflow: auto;
+/* Home Marketing page */
+.expander {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+  overflow-x: hidden;
 }
-div.container {
+.expander img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  min-height: 150px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+header {
+  border-bottom: 1px solid #63BAFF;
+}
+.bar,
+.top-bar {
+  background-color: #b1ddff;
+  padding: 30px 0;
+}
+@media (max-width: 1000px) {
+  header {
+    border-style: none;
+  }
+  .top-bar {
+    padding: 0;
+  }
+}
+div.focus {
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background-image: url('./assets/texture-yellow-wall.jpg');
+  overflow: hidden;
+  box-sizing: border-box;
+
 }
-div.container div.panel {
+@media (max-width: 1000px) {
+  div.focus {
+    flex-direction: column;
+  }
+}
+div.focus div.panel {
   background-color: white;
   border: 2px solid #2D2D2D;
   border-radius: 8px;
   padding: 1rem;
   margin: 2rem;
   text-align: center;
-  min-width: 500px;
   box-sizing: border-box;
 }
-@media (max-width: 500px) {
-  div.container div.panel {
+@media (max-width: 1000px) {
+  div.focus div.panel {
     width: 100%;
     border-right-style: none;
     border-left-style: none;
@@ -219,20 +248,20 @@ div.container div.panel {
     margin: 0;
     min-width: initial;
   }
-  div.container div.panel h2,
-  div.container div.panel h3 {
+  div.focus div.panel h2,
+  div.focus div.panel h3 {
     margin: 1rem 0;
   }
 }
-div.container div.panel h2 {
+div.focus div.panel h2 {
   font-size: 4rem;
   margin: 1rem;
 }
-div.container div.panel h3 {
+div.focus div.panel h3 {
   font-size: 3rem;
   margin: 1rem;
 }
-div.container a {
+div.focus a {
   background-color: #05FFB8;
   text-align: center;
   text-decoration: none;
@@ -244,7 +273,7 @@ div.container a {
   font-size: 3.5rem;
   min-width: 4rem;
 }
-div.container a:hover {
+div.focus a:hover {
   background-color: #03FF76;
   cursor: pointer;
 }

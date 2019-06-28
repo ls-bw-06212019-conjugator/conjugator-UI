@@ -1,22 +1,121 @@
 /* Home Marketing page */
 
-div.shaded {
-  background-color: @blue;
-  height: auto;
-  min-height: 100vh;
-  overflow: auto;
+
+
+
+
+// div.full-size {
+
+// }
+
+// div.focus {
+//   margin: 0 auto;
+//   padding: 3rem 0;
+//   max-width: @max-horizontal;
+//   min-width: @mobile;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   align-content: center;
+//   flex-wrap: wrap;
+//   box-sizing: border-box;
+
+//   @media @mobile { min-width: initial;}
+
+//   div.panel {
+//     background-color: white;
+//     border: 2px solid @black;
+//     border-radius: 8px;
+//     padding: 1rem;
+//     margin: 2rem;
+//     text-align: center;
+//     box-sizing: border-box;
+
+//     @media @mobile {
+//       width: 100%;
+//       border-right-style: none;
+//       border-left-style: none;
+//       border-radius: 0;
+//       margin: 0;
+//       min-width: initial;
+
+//       h2, h3 {margin: 1rem 0;}
+//     }
+
+//     h2 {
+//       font-size: 4rem;
+//       margin: 1rem;
+//     }
+
+//     h3 {
+//       font-size: 3rem;
+//       margin: 1rem;
+//     }
+//   }
+
+//   a {
+//     .button-default();
+//     padding: 2rem;
+//     margin: 2rem;
+//     border-radius: 50%;
+//     font-size: 3.5rem;
+//     min-width: 4rem;
+//   }
+
+//   a:hover {
+//     .button-hover();
+//   }
+// }
+
+/////////////////////////////////////////
+
+/* Home Marketing page */
+
+
+.expander {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+  overflow-x: hidden;
+
+  img {
+    object-fit: cover;
+    object-position: 50% 30%;
+    min-height: 150px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
 }
 
-div.container {
+header {border-bottom: 1px solid @blue;}
+
+.bar, .top-bar {
+  background-color: tint(@blue, 50%);
+  padding: 30px 0;
+}
+
+
+@media @tablet {
+  header {border-style: none;}
+
+  .top-bar {
+    padding: 0;
+  }
+}
+
+div.focus {
   margin: 0 auto;
-  // padding: 3rem 0;
   max-width: @max-horizontal;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background-image: url('./assets/texture-yellow-wall.jpg');
+  overflow: hidden;
+  box-sizing: border-box;
+
+  @media @tablet {
+    flex-direction: column;
+  }
 
   div.panel {
     background-color: white;
@@ -25,10 +124,9 @@ div.container {
     padding: 1rem;
     margin: 2rem;
     text-align: center;
-    min-width: @mobile-size;
     box-sizing: border-box;
 
-    @media @mobile {
+    @media @tablet {
       width: 100%;
       border-right-style: none;
       border-left-style: none;
