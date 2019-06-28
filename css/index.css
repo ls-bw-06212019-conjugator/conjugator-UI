@@ -198,7 +198,7 @@ header.full-size {
   flex-grow: 1;
   overflow: hidden;
 }
-header {
+header.full-size {
   border-bottom: 1px solid #63BAFF;
 }
 .bar,
@@ -207,7 +207,7 @@ header {
   padding: 18px 0;
 }
 @media (max-width: 1000px) {
-  header {
+  header.full-size {
     border-style: none;
   }
   .top-bar {
@@ -690,6 +690,7 @@ div.scroller div.display-area div.panel h3 {
 }
 div.scroller div.display-area div.panel p {
   font-size: 1.8rem;
+  line-height: 2rem;
   margin: 1rem;
 }
 @media (max-width: 1000px) {
