@@ -188,6 +188,16 @@ header.full-size {
 .expander {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  min-height: 600px;
+}
+.expander img {
+  object-fit: none;
+  /* Do not scale the image */
+  object-position: center;
+  /* Center the image within the element */
+  width: 100px;
+  flex-grow: 1;
 }
 .bar {
   background-color: #b1ddff;
