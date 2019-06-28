@@ -223,7 +223,6 @@ div.focus {
   align-items: center;
   overflow: hidden;
   box-sizing: border-box;
-
 }
 @media (max-width: 1000px) {
   div.focus {
