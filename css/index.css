@@ -407,13 +407,13 @@ div.container a:hover {
   overflow-x: hidden;
   max-width: 100%;
 }
-.abouttop {
+.aboutpage .abouttop {
   position: relative;
   padding: 0;
   margin: 0;
   max-width: 100%;
 }
-.abouttop .aboutheader-image .aboutimage {
+.aboutpage .abouttop .aboutheader-image .aboutimage {
   margin: 0%;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -421,10 +421,10 @@ div.container a:hover {
   max-width: 100%;
   max-height: 400px;
 }
-.abouttop .aboutheader-image .aboutimage img {
+.aboutpage .abouttop .aboutheader-image .aboutimage img {
   width: 100%;
 }
-.brief h3 {
+.aboutpage .brief h3 {
   font-size: 50px;
   color: white;
   border: 1px dashed white;
@@ -438,32 +438,38 @@ div.container a:hover {
   padding: 10px;
   box-shadow: 4px, 4px,;
 }
-.brief p {
+.aboutpage .brief p {
   font-size: 1.6rem;
   color: darkslategrey;
   margin: 2%;
   padding: 2%;
 }
-.bottomabout {
+.aboutpage .bottomabout {
   display: flex;
   align-content: top;
   justify-content: space-evenly;
   width: 100%;
 }
-.bottomabout .feature {
+.aboutpage .bottomabout .feature {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
   border: 2px solid #63BAFF;
   margin: 40px;
 }
-.bottomabout .feature .paragraphtext {
+.aboutpage .bottomabout .feature .fleximg {
+  width: 100%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.aboutpage .bottomabout .feature .paragraphtext {
   display: none;
 }
-.bottomabout .feature .paragraphtext.paragraphtext-open {
+.aboutpage .bottomabout .feature .paragraphtext.paragraphtext-open {
   display: block;
 }
-.bottomabout .feature h3 {
+.aboutpage .bottomabout .feature h3 {
   font-size: 2rem;
   color: white;
   padding: 12px;
@@ -472,30 +478,34 @@ div.container a:hover {
   background-color: #05FFB8;
   justify-content: center;
 }
-.bottomabout .feature p {
+.aboutpage .bottomabout .feature p {
   font-size: 1.6rem;
   color: darkslategrey;
   padding: 12px;
   padding-top: 10px;
 }
 @media (max-width: 500px) {
-  .bottomabout {
+  .aboutpage .bottomabout {
     display: inline-block;
     width: 100%;
     align-content: center;
   }
-  .logolink {
+  .aboutpage .logolink {
     display: none;
   }
-  .logolink .nav {
+  .aboutpage .logolink .nav {
     display: flex;
     width: 20%;
     overflow: hidden;
     position: absolute;
   }
 }
-.expandButton {
-  border: 1px solid, darkslategray;
+.aboutpage .expandButton {
+  font-size: 12px;
+  border: 2px solid darkslategrey;
+  padding: 2px;
+  margin: 10px;
+  margin-top: 40px;
   border-radius: 5px;
 }
 .contact-image {
