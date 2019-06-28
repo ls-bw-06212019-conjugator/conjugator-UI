@@ -183,8 +183,7 @@ header.full-size {
   max-width: none;
   margin: 0;
 }
-/* Home Marketing page */
-/* Home Marketing page */
+/* Marketing Page */
 .expander {
   display: flex;
   flex-direction: column;
@@ -254,11 +253,15 @@ div.focus div.panel {
 }
 div.focus div.panel h2 {
   font-size: 4rem;
+  color: black;
   margin: 1rem;
+  padding: 0 0 5px 0;
 }
 div.focus div.panel h3 {
   font-size: 3rem;
+  color: black;
   margin: 1rem;
+  padding: 0;
 }
 div.focus a {
   background-color: #05FFB8;
