@@ -75,20 +75,33 @@
 .expander {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   height: 100vh;
-  min-height: 600px;
-  
+  overflow-x: hidden;
+
   img {
-    object-fit: none; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    width: 100px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    min-height: 150px;
     flex-grow: 1;
+    overflow: hidden;
   }
 }
 
-.bar {
+header {border-bottom: 1px solid @blue;}
+
+.bar, .top-bar {
   background-color: tint(@blue, 50%);
   padding: 30px 0;
+}
+
+
+@media @tablet {
+  header {border-style: none;}
+
+  .top-bar {
+    padding: 0;
+  }
 }
 
 div.focus {
@@ -97,8 +110,8 @@ div.focus {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  // align-content: space-around;
-  // flex-wrap: wrap;
+  overflow: hidden;
+  box-sizing: border-box;
 
   @media @tablet {
     flex-direction: column;
@@ -111,10 +124,9 @@ div.focus {
     padding: 1rem;
     margin: 2rem;
     text-align: center;
-    min-width: @mobile-size;
     box-sizing: border-box;
 
-    @media @mobile {
+    @media @tablet {
       width: 100%;
       border-right-style: none;
       border-left-style: none;
@@ -151,8 +163,3 @@ div.focus {
   }
 }
 
-header {border-bottom: 1px solid @blue;}
-
-@media @mobile {
-  header {border-style: none;}
-}
