@@ -498,12 +498,14 @@ div.focus a:hover {
 }
 .aboutpage .bottomabout .feature h3 {
   font-size: 2rem;
-  color: white;
+  color: black;
   padding: 12px;
-  border: 1px solid #05FFB8;
+  border: 3px solid #63BAFF;
   border-radius: 5px;
-  background-color: #05FFB8;
+  background-color: white;
   justify-content: center;
+  display: block;
+  padding-left: 35%;
 }
 .aboutpage .bottomabout .feature p {
   font-size: 1.6rem;
@@ -529,11 +531,15 @@ div.focus a:hover {
 }
 .aboutpage .expandButton {
   font-size: 12px;
-  border: 2px solid darkslategrey;
+  background-color: #05FFB8;
+  color: white;
   padding: 2px;
   margin: 10px;
   margin-top: 40px;
   border-radius: 5px;
+}
+.aboutpage .expandButton:hover {
+  background-color: #03FF76;
 }
 .contact-image {
   height: 400px;

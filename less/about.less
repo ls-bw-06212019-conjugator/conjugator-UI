@@ -88,12 +88,15 @@
   
       h3 {
         font-size: 2rem;
-        color:white;
+        color:black;
         padding: 12px;
-        border: 1px solid @green;
+        border: 3px solid @blue;
         border-radius: 5px;
-        background-color:@green;
+        background-color: white;
         justify-content: center;
+        display: block;
+        padding-left: 35%;
+
         
       }
   
@@ -125,11 +128,15 @@
   }
   .expandButton {
     font-size: 12px;
-    border: 2px solid darkslategrey;
+    background-color:@button-color;
+    color: white;
     padding: 2px;
     margin: 10px;
     margin-top: 40px;
     border-radius: 5px;
-  
+    
+  }
+  .expandButton:hover { 
+    background-color: @button-hover;
   }
 }
